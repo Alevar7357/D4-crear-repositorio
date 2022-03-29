@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER CONTACTO -->
+    <header class="header"> 
+    <div class="headerDiv">
+        <img src="../imagenes/logohnegro.png" alt="Logovanta" class="logo">
+    </div>
+    </header>
+
+<!-- NAVEGADOR CONTACTO -->
+<nav class="navegacion">
+    <ul class="menu">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../paginas/growshop.html">GROWSHOP</a>
+                <ul class="submenu">
+                    <li><a href="#">FERTILIZANTES</a></li>
+                    <li><a href="#">SUSTRATO</a></li>
+                    <li><a href="#">ILUMINACIÓN</a></li>
+                    <li><a href="#">VENTILACION</a></li>
+                    <li><a href="#">ACCESORIOS Y PARAFERNALIA</a></li>
+                </ul>
+        </li>
+        <li><a href="../paginas/cursos.html">CURSOS</a></li>
+        <li><a href="../paginas/blog.html">BLOG</a></li>
+        <li><a href="../paginas/contacto.html">CONTACTO</a>
+        <li><a href="../paginas/quienes-somos.html">NOSOTROS</a></li>
+        <li><a href="../paginas/sesiones.html">PICS 420</a></li>
+        
+    </ul>
+</nav>
+
+<!-- MAIN CONTACTO -->
+<main class="mainContacto">
+    <h1 class="contactoT">Dejanos tu mensaje</h1>
+    <form class="formContacto" action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+                <label for="nombre">Ingrese su nombre</label>
+                    <input type="text" name="nombre" id="">
+                <label for="email">Ingrese su correo</label>
+                    <input type="email" name="imail" id="">
+                <label for="fechanacimiento">Ingrese su fecha de nacimiento</label>
+                    <input type="date" name="fechanacimiento" id="">
+        <hr>
+                
+                <label for="genero">Genero</label>
+                    <input type="radio" name="genero" value="F" id="">Femenino
+                    <input type="radio" name="genero" value="M" id="">Masculino
+                    <input type="radio" name="genero" value="NE" id="">Prefiero no decirlo
+        <br>
+                
+                <label for="pais">Lugar de residencia</label>
+                <select name="pais" id="">
+                    <option value="arg">Argentina</option>
+                    <option value="uru">Uruguay</option>
+                    <option value="chi">Chile</option>
+                    <option value="otro">Otros</option>
+                </select>
+                <input type="text" placeholder="ingrese pais" name="pais">
+                
+        </fieldset>
+        <fieldset>
+            <legend>Deja tu mensaje</legend>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Deja aca tu mensaje"></textarea>
+            <br>
+            <label for="terminosycondiciones">Consentimiento</label>
+                <input type="checkbox" name="terminosycondiciones" value="1" id="">Acepta terminos y condiciones
+                <input type="checkbox" name="terminosycondiciones" value="2" id="">Quiero que me envien correos con ofertas y promociones
+                <input type="checkbox" name="terminosycondiciones" value="3" id="">Quiero suscribirme al newsletter
+        </fieldset>
+        <br>
+        <div class="botonForm">
+            <input type="submit" value="Enviar mensaje">
+            <input type="reset" value="Borrar todo">
+            <input type="button" value="Sirvo con js">
+        </div>
+    
+    </form>
+</main>
+
+<!-- FOOTER CONTACTO -->
+<footer class="footer">
+            <ul class="rrss">
+                <li>><a href="../index.html"><img class="home" src="../imagenes/logohblanco.png" alt="logovanta-blanco"></a></li>
+                <li><a href="https://es-la.facebook.com/login/device-based/regular/login/"><img class="rrssFace" src="../imagenes/rs-facebook.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/"><img class="rrssIg" src="../imagenes/rs-instagram.png" alt=""></a></li>
+                
+            </ul>
+                <a href="https://www.whatsapp.com/?lang=es"><img class="wspSticky" src="../imagenes/rs-whatsapverde.png" alt="wsp-sticky" >
+                </a>
+</footer>
+
+
+
+
+
+
+</body>
+</html>
