@@ -154,11 +154,16 @@ display:block */
  
 }
 
+.indexIrcurso {
+    animation: jackInTheBox;
+    animation-duration: 2s;
+}
 .cursosIndex a{
     text-decoration: none;
     color: white;
     font-size: 3rem;
     margin: 10px 25px;
+    padding: 5px;
     border: solid 3px rgba(9, 180, 9, 0.836);
 }
 
@@ -211,7 +216,13 @@ display:block */
     background-color: black;
     border: solid 3px rgba(9, 180, 9, 0.836);
     margin: 25px;
+    padding: 5px;
 
+}
+
+.indexIrtienda{
+    animation: jackInTheBox;
+    animation-duration: 2s;
 }
 
 
@@ -490,11 +501,56 @@ display:block */
     align-items: center;
     margin: 5px 0px;
 }
+
+@keyframes aparecerMainH1{
+    0%{
+        opacity: 0%;
+        transform: translate(-100px);
+    }
+    10%{
+        opacity: 10%;
+    }
+    20%{
+        opacity: 20%;
+    }
+    30%{
+        opacity: 30%;
+    }
+    40%{
+        opacity: 40%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    60%{
+        opacity: 60%;
+    }
+    70%{
+        opacity: 70%;
+    }
+    80%{
+        opacity: 80%;
+    }
+    90%{
+        opacity: 90%;
+    }
+    100%{
+        opacity: 100%;
+        transform: translate(0px);
+    }
+}
+
+
 .mainPics h1{
     font-size: 8rem;
     margin: 10px 10px;
     font-style: italic;
     font-weight: 700;
+
+    animation-name: aparecerMainH1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
 }
 .mainPics img{
     width: 400px;
@@ -518,6 +574,8 @@ display:block */
     align-items: center;
     background-color: black;
 }
+
+
 .pics1 h1{
     color: white;
     font-size: 4rem;
@@ -529,6 +587,14 @@ display:block */
     width: 300px;
     border: solid 3px white;
     padding: 5px;
+    filter: grayscale(100%);
+    transition: all 1s;
+}
+
+.pics1 img:hover{
+    width: 400px;
+    margin: 10px;
+    filter: none;
 }
 
 /* PICS2 */
@@ -551,7 +617,16 @@ display:block */
     width: 300px;
     border: solid 3px white;
     padding: 5px;
+    filter: grayscale(100%);
+    transition: all 1s;
 }
+
+.pics2 img:hover{
+    width: 400px;
+    margin: 10px;
+    filter: none;
+}
+
 
 /* PICS3*/
 .pics3{
@@ -573,6 +648,14 @@ display:block */
     width: 300px;
     border: solid 3px white;
     padding: 5px;
+    filter: grayscale(100%);
+    transition: all 1s;
+}
+
+.pics3 img:hover{
+    width: 400px;
+    margin: 10px;
+    filter: none;
 }
 
 /* PICS4 */
@@ -595,6 +678,14 @@ display:block */
     width: 300px;
     border: solid 3px white;
     padding: 5px;
+    filter: grayscale(100%);
+    transition: all 1s;
+}
+
+.pics4 img:hover{
+    width: 400px;
+    margin: 10px;
+    filter: none;
 }
 
 /* FOOTER  *//* FOOTER  *//* FOOTER  *//* FOOTER  *//* FOOTER  *//* FOOTER  *//* FOOTER  */
