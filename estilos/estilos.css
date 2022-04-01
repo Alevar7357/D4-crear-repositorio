@@ -1579,9 +1579,8 @@ display:block */
     background-color: white;
     display: flex;
     justify-content: center;
-    
-    
 }
+
 .headerContacto img{
     width: 400px;
 }
@@ -1826,5 +1825,312 @@ display:block */
         height: 20rem;
         width: 30rem;
     }
+
+}
+
+
+/* CURSOS *//* CURSOS *//* CURSOS *//* CURSOS *//* CURSOS *//* CURSOS *//* CURSOS *//* CURSOS */
+
+/* HEADER CONTACTO *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER */
+
+.headerCursos{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.headerCursos img{
+    width: 400px;
+}
+
+/* CONTACTO BLOG *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION */
+
+.navegacionCursos{
+    background-color: black;
+    grid-area: nav;
+}
+.menuCursos li{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 10px 10px;
+}
+
+.menuCursos li a{
+    color: white;
+    text-decoration: none;  
+}
+
+.submenuCursos{
+    display: none;
+    position: absolute;
+}
+
+.submenuCursos li{
+    display: block;
+    background-color: black;
+    padding: 5px 0px;
+}
+
+.menuCursos li:hover ul{
+    display: block;
+}
+
+/* MAIN CURSOS *//* MAIN CURSOS *//* MAIN CURSOS *//* MAIN CURSOS *//* MAIN CURSOS *//* MAIN CURSOS */
+
+.mainCursos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.mainCursos h1{
+    font-size: 5rem;
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+
+.mainCursos p{
+    font-size: 3rem;
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+
+/* SECTION CURSOS *//* SECTION CURSOS *//* SECTION CURSOS *//* SECTION CURSOS *//* SECTION CURSOS */
+
+.sectionCdispo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px 0px;
+    background-color: black;
+
+}
+
+.cultivoInt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    border: solid 3px springgreen;
+    margin: 20px 5px;
+}
+
+.intImg{
+    width: 300px;
+    height: 200px;
+    margin: 10px 5px;
+
+}
+
+.cultivoInt h1{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-style: italic;
+    
+}
+
+.cultivoInt p{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin: 25px;
+    
+}
+
+.cultivoInt a{
+    text-decoration: underline;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: solid 2px #4ab70b;    
+}
+
+.cultivoExt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    border: solid 3px springgreen;
+    margin: 20px 5px;
+}
+
+.cultivoeExImg{
+    width: 300px;
+    height: 200px;
+    margin: 10px 5px;
+
+}
+
+.cultivoExt h1{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-style: italic;
+    
+}
+
+.cultivoExt p{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin: 25px;
+    
+}
+
+.cultivoExt a{
+    text-decoration: underline;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: solid 2px #4ab70b;    
+}
+
+.cultivoHidro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    border: solid 3px springgreen;
+    margin: 20px 5px;
+    
+}
+
+.hidroImg{
+    width: 300px;
+    height: 200px;
+    margin: 10px 5px;
+
+}
+
+.cultivoHidro h1{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-style: italic;
+    
+}
+
+.cultivoHidro p{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin: 25px;
+    
+}
+
+.cultivoHidro a{
+    text-decoration: underline;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: solid 2px #4ab70b;    
+}
+
+
+/* SECTION TABLAS *//* SECTION TABLAS *//* SECTION TABLAS *//* SECTION TABLAS *//* SECTION TABLAS */
+
+.tablaComisiones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.comisiones{
+    font-size: 3rem;
+    margin: 10px 0px 25px 0px;
+    font-style: italic;
+}
+
+.tablita{
+    width: 500px;
+    height: 250px;
+
+}
+
+
+/* FOOTER CURSOS *//* FOOTER CURSOS *//* FOOTER CURSOS *//* FOOTER CURSOS *//* FOOTER CURSOS *//* FOOTER CURSOS */
+
+.footerCursos{
+    margin: 25px 0px 0px 0px;;
+    background-color: black;
+    grid-area: footer;
+}
+.footerCursos ul{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.home{
+    width: 150px;
+}
+.rrssFace{
+    width: 50px;
+}
+.rrssIg{
+    width: 50px;
+}
+.wspSticky{
+    width: 55px;    
+}
+
+
+/* TAMAÑO TABLET */
+
+@media screen and (max-width: 1025px){
+
+    .sectionCdispo{
+        justify-content: center
+    }
+}
+
+
+
+/* TAMAÑO CELULAR */
+
+@media screen and (max-width: 426px){
+    .headerCursos{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .headerCursos img{
+        width: 200px;
+    
+    }
+
+    .mainCursos{
+        font-size: 2rem;
+    }
+
+    .mainCursos p{
+        font-size: 1.5rem;
+    }
+
+    .tablita{
+        width: 300px;
+        height: 400px;
+    }
+
 
 }
