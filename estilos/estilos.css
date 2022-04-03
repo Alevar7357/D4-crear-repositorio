@@ -129,7 +129,6 @@ display:block */
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-   
 }
 .cursosIndex h1{
     font-size: 4rem;
@@ -151,7 +150,6 @@ display:block */
 .cursosIndex img{
     width: 750px;
     margin: 25px;
- 
 }
 
 .indexIrcurso {
@@ -255,7 +253,7 @@ display:block */
 
 /* TABLET */
 
- @media screen and (max-width: 1025px){
+@media screen and (max-width: 1025px){
     .contenedor_total{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -738,7 +736,7 @@ display:block */
 }
 
 /* HEADER */
-.headerIndex{
+.headerPics{
     grid-area: logo;
 
 }
@@ -1008,7 +1006,14 @@ display:block */
     border: solid 3px white;
     padding: 5px;
     margin: 10px 0px;
+    transition: all 1s;
 }
+
+.pics1 img:hover{
+    filter: none;
+    width: 300px;
+}
+
 
 /* PICS2 */
 .pics2{
@@ -1033,6 +1038,12 @@ display:block */
     border: solid 3px white;
     padding: 5px;
     margin: 10px 0px;
+    transition: all 1s;
+}
+
+.pics2 img:hover{
+    filter: none;
+    width: 300px;
 }
 
 /* PICS3*/
@@ -1058,6 +1069,12 @@ display:block */
     border: solid 3px white;
     padding: 5px;
     margin: 10px 0px;
+    transition: all 1s;
+}
+
+.pics3 img:hover{
+    filter: none;
+    width: 300px;
 }
 
 /* PICS4 */
@@ -1083,6 +1100,12 @@ display:block */
     border: solid 3px white;
     padding: 5px;
     margin: 10px 0px;
+    transition: all 1s;
+}
+
+.pics4 img:hover{
+    filter: none;
+    width: 300px;
 }
 
 /* FOOTER */
