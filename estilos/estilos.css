@@ -2352,7 +2352,6 @@ H1 H2 H3 H4 H5 H6 small y lead */
 }
 
 .contG2 img{
-    margin: 10px;
 }
 
 .contG3 {
@@ -2364,7 +2363,6 @@ H1 H2 H3 H4 H5 H6 small y lead */
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     font-weight: 600;
-    margin: 10px 0px;
 }
 
 .contG3 p{
