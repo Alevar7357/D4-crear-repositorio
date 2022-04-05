@@ -1854,7 +1854,7 @@ display:block */
 
 /* CURSOS *//* CURSOS *//* CURSOS *//* CURSOS *//* CURSOS *//* CURSOS *//* CURSOS *//* CURSOS */
 
-/* HEADER CONTACTO *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER */
+/* HEADER CURSOS *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER */
 
 .headerCursos{
     background-color: white;
@@ -1867,7 +1867,7 @@ display:block */
     width: 400px;
 }
 
-/* CONTACTO BLOG *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION */
+/* NAVEGACION CURSOS*//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION */
 
 .navegacionCursos{
     background-color: black;
@@ -2065,7 +2065,7 @@ display:block */
 }
 
 
-/* SECTION TABLAS *//* SECTION TABLAS *//* SECTION TABLAS *//* SECTION TABLAS *//* SECTION TABLAS */
+/* SECTION TABLAS CURSOS *//* SECTION TABLAS CURSOS *//* SECTION TABLAS CURSOS *//* SECTION TABLAS CURSOS */
 
 .tablaComisiones{
     display: flex;
@@ -2116,7 +2116,7 @@ display:block */
 }
 
 
-/* TAMAÑO TABLET */
+/* TAMAÑO TABLET  CURSOS */
 
 @media screen and (max-width: 1025px){
 
@@ -2125,9 +2125,7 @@ display:block */
     }
 }
 
-
-
-/* TAMAÑO CELULAR */
+/* TAMAÑO CELULAR CURSOS */
 
 @media screen and (max-width: 426px){
     .headerCursos{
@@ -2157,3 +2155,155 @@ display:block */
 
 
 }
+
+/* GROWSHOP CON BOOTSTRAP *//* GROWSHOP CON BOOTSTRAP *//* GROWSHOP CON BOOTSTRAP *//* GROWSHOP CON BOOTSTRAP */
+
+/* BOOTSTRAP se maneja con clases
+en textro tenemos 
+H1 H2 H3 H4 H5 H6 small y lead */
+
+
+.headerNosotros{
+    background-color: #F8F9FA;
+}
+
+.headerNosotros img{
+    width: 200px;
+}
+/*  NAV NOSOTROS *//*  NAV NOSOTROS *//*  NAV NOSOTROS *//*  NAV NOSOTROS *//*  NAV NOSOTROS *//*  NAV NOSOTROS */
+
+.containerNav{
+    font-size: 2rem;
+}
+
+.submenuGrowshop{
+    font-size: 2rem;
+}
+
+.buscadorMenu{
+    width: 200px;
+}
+/* NAV VIEJO  */
+
+/* .navegacionNosotros{
+    background-color: black;
+    margin: 10px 0px;
+}
+
+.menuNosotros li{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 10px 10px;
+}
+
+.menuNosotros li a{
+    color: white;
+    text-decoration: none;  
+}
+
+.submenuNosotros{
+    display: none;
+    position: absolute;
+}
+
+.submenuNosotros li{
+    display: block;
+    background-color: black;
+    padding: 5px 0px;
+}
+
+.menuNosotros li:hover ul{
+    display: block; 
+} */
+
+/* MAIN NOSOTROS *//* MAIN NOSOTROS *//* MAIN NOSOTROS *//* MAIN NOSOTROS *//* MAIN NOSOTROS *//* MAIN NOSOTROS */
+
+.mainNosotros{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.mainNosotros h1{
+    font-size: 5rem;
+    color: white;
+    margin: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.mainNosotros p{
+    font-size: 3rem;
+    color: white;
+    margin: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+/* SECTION NOSOTROS *//* SECTION NOSOTROS *//* SECTION NOSOTROS *//* SECTION NOSOTROS *//* SECTION NOSOTROS */
+
+.sectionNosotros{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.nosotrosC1 Img{
+    margin: 10px 0px 0px 0px;
+}
+
+.nosotrosC2 h1{
+    margin: 20px;
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+} 
+
+.nosotrosC2 p{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+/* FOOTER NOSOTROS *//* FOOTER NOSOTROS *//* FOOTER NOSOTROS *//* FOOTER NOSOTROS *//* FOOTER NOSOTROS */
+
+.footerNosotros{
+    margin: 10px 0px 0px 0px;;
+    background-color: black;
+}
+.footerNosotros ul{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.rrss li{
+    list-style: none;
+}
+
+.home{
+    width: 150px;
+}
+.rrssFace{
+    width: 50px;
+}
+.rrssIg{
+    width: 50px;
+}
+.wspSticky{
+    width: 55px;    
+}
+
+
+
+

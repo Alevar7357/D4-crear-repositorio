@@ -1,74 +1,230 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Quienes somos?</title>
+
+    <!-- Links Bootstrap -->
+    <!-- Primero deben estar los estilos de bootstrap y luego los nuestros para que predominen las caracteristicas que queremos dar nosotros -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="../estilos/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-            <!-- HEADER NOSOTROS -->
-            <header class="header"> 
-                <div class="headerDiv">
-                    <img src="../imagenes/logohnegro.png" alt="Logovanta" class="logo">
+    <div class="container-fluid">
+        <!--Todo contenidio en este div con la clas container (si queremos margen) o conteiner fluid si queremos que ocupe el ancho completo  -->
+
+        <!-- HEADER NOSOTROS -->
+
+
+        <!-- HEADER VIEJO -->
+        <!--  <header class="headerNosotros row">
+            <div class="headerDiv col-12">
+                solo ponemos la cantidad de columnas a ocupar va a ser la misma para todos los dispositivos 
+                <img class="img-fluid" src="../imagenes/logohnegro.png" alt="Logovanta">
+            </div>
+        </header> -->
+
+        <!-- NAVEGADOR NOSOTROS -->
+
+        <div class="row">
+            <header class="headerNosotros col-md-12 col-lg-2">
+                <img class="img-fluid" src="../imagenes/logohnegro.png" alt="Logovanta">
+            </header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light col-md-12 col-lg-10 containerNav">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/blog.html">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/contacto.html">CONTACTO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/cursos.html">CURSOS</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    GROWSHOP
+                                </a>
+                                <ul class="dropdown-menu submenuGrowshop" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/quienes-somos.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/sesiones.html">PICS 420</a>
+                            </li>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2 buscadorMenu" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
                 </div>
-                </header>
-            
-            <!-- NAVEGADOR NOSOTROS -->
-            <nav class="navegacion">
-                <ul class="menu">
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="../paginas/growshop.html">GROWSHOP</a>
-                            <ul class="submenu">
-                                <li><a href="#">FERTILIZANTES</a></li>
-                                <li><a href="#">SUSTRATO</a></li>
-                                <li><a href="#">ILUMINACIÓN</a></li>
-                                <li><a href="#">VENTILACION</a></li>
-                                <li><a href="#">ACCESORIOS Y PARAFERNALIA</a></li>
-                            </ul>
-                    </li>
-                    <li><a href="../paginas/cursos.html">CURSOS</a></li>
-                    <li><a href="../paginas/blog.html">BLOG</a></li>
-                    <li><a href="../paginas/contacto.html">CONTACTO</a>
-                    <li><a href="../paginas/quienes-somos.html">NOSOTROS</a></li>
-                    <li><a href="../paginas/sesiones.html">PICS 420</a></li>
-                    
-                </ul>
             </nav>
 
-<!-- MAIN NOSOTROS -->
-    <main class="mainNosotros">
-        <h1 class="nosotrosT">Somos Vanta </h1>
-        <p class="nosotrosP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum soluta atque eveniet accusantium, a earum veniam. Accusantium tempora ad autem odit. Ipsam aut consequatur itaque qui assumenda. Debitis dignissimos cupiditate nihil odio in dicta corporis deleniti nam veritatis voluptates rem reiciendis eius, eaque illo esse. Sunt nobis sed rerum dicta.</p>
-    </main>
-
-    <!-- SECTION NOSOTROS -->
-        <section class="nosotrosSection">
-            <div class="nosotrosC1">
-                <img class="nosotrosImg" src="../imagenes/qs-equipovanta4.jpg" alt="equipovanta">
+            <!-- MENU VIEJO -->
+            <!--         <nav class="navegacionNosotros row">
+            <div class="col-12">
+            <ul class=" menuNosotros">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../paginas/growshop.html">GROWSHOP</a>
+                    <ul class="submenuNosotros">
+                        <li><a href="#">FERTILIZANTES</a></li>
+                        <li><a href="#">SUSTRATO</a></li>
+                        <li><a href="#">ILUMINACIÓN</a></li>
+                        <li><a href="#">VENTILACION</a></li>
+                        <li><a href="#">ACCESORIOS Y PARAFERNALIA</a></li>
+                    </ul>
+                </li>
+                <li><a href="../paginas/cursos.html">CURSOS</a></li>
+                <li><a href="../paginas/blog.html">BLOG</a></li>
+                <li><a href="../paginas/contacto.html">CONTACTO</a>
+                <li><a href="../paginas/quienes-somos.html">NOSOTROS</a></li>
+                <li><a href="../paginas/sesiones.html">PICS 420</a></li>
+                    </ul>
             </div>
-            <div class="nosotrosC2">
-            <h1 class="nosotrosT2">Calidad humana</h1>
-                <p class="nosotrosP2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente expedita officiis cum voluptatem tenetur vel sed nam vitae numquam voluptas, ducimus nisi? Architecto error quasi soluta, sequi facere assumenda nesciunt consectetur inventore molestiae molestias Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor praesentium natus repellendus? Alias doloribus nam nostrum aspernatur exercitationem, est fugiat praesentium! Quis veniam repudiandae delectus repudiandae officiis. Eum, sapiente illo? Dolore, ullam architecto sequi eligendi impedit sapiente inventore Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint harum consequuntur iure distinctio obcaecati inventore quae accusantium expedita deleniti aliquam, consequatur illo dolore voluptatibus sunt quam ipsam quia? 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorem vel, maxime expedita quibusdam excepturi molestiae a, cupiditate asperiores nesciunt quis laboriosam magnam vero voluptatibus. Minus quisquam illum provident cupiditate delectus unde ducimus accusamus laboriosam explicabo rerum sapiente incidunt, fuga laudantium aut soluta, maiores natus quam ipsam doloribus et tempora eum corrupti! Atque minima non sed! Blanditiis expedita illum voluptatibus corrupti. Quod iure ducimus dignissimos dolore pariatur ipsum quam harum nisi velit corporis, corrupti laboriosam ratione ipsam ? </p>
-            </div>
-            
+    </nav> -->
 
-        </section>  
-    
-   <!-- FOOTER NOSOTROS -->
-<footer class="footer">
-    <ul class="rrss">
-        <li>><a href="../index.html"><img class="home" src="../imagenes/logohblanco.png" alt="logovanta-blanco"></a></li>
-        <li><a href="https://es-la.facebook.com/login/device-based/regular/login/"><img class="rrssFace" src="../imagenes/rs-facebook.png" alt=""></a></li>
-        <li><a href="https://www.instagram.com/"><img class="rrssIg" src="../imagenes/rs-instagram.png" alt=""></a></li>
-        
-    </ul>
-        <a href="https://www.whatsapp.com/?lang=es"><img class="wspSticky" src="../imagenes/rs-whatsapverde.png" alt="wsp-sticky" >
-        </a>
+            <!-- MAIN NOSOTROS -->
+            <main class="mainNosotros row">
+                <div class="col-12">
+                    <h1 class="nosotrosT">Somos Vanta </h1>
+                    <p class="nosotrosP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum soluta atque
+                        eveniet
+                        accusantium, a earum veniam. Accusantium tempora ad autem odit. Ipsam aut consequatur itaque qui
+                        assumenda. Debitis dignissimos cupiditate nihil odio in dicta corporis deleniti nam veritatis
+                        voluptates
+                        rem reiciendis eius, eaque illo esse. Sunt nobis sed rerum dicta.</p>
+                </div>
+            </main>
+
+            <!-- SECTION NOSOTROS -->
+            <section class="sectionNosotros row">
+                <div class="nosotrosC1 col-sm-12 col-md-12 col-lg-4">
+                    <img class="img-fluid" src="../imagenes/qs-equipovanta4-min.jpg" alt="equipovanta">
+                </div>
+                <div class="nosotrosC2 col-sm-12 col-md-12 col-lg-6">
+                    <h1 class="nosotrosT2">Calidad humana</h1>
+                    <p class="nosotrosP2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente expedita
+                        officiis cum voluptatem tenetur vel sed nam vitae numquam voluptas, ducimus nisi? Architecto
+                        error
+                        quasi soluta, sequi facere assumenda nesciunt consectetur inventore molestiae molestias Lorem
+                        ipsum
+                        dolor sit amet consectetur adipisicing elit. Dolor praesentium natus repellendus? Alias
+                        doloribus
+                        nam nostrum aspernatur exercitationem, est fugiat praesentium! Quis veniam repudiandae delectus
+                        repudiandae officiis. Eum, sapiente illo? Dolore, ullam architecto sequi eligendi impedit
+                        sapiente
+                        inventore Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint harum
+                        consequuntur
+                        iure distinctio obcaecati inventore quae accusantium expedita deleniti aliquam, consequatur illo
+                        dolore voluptatibus sunt quam ipsam quia?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorem vel, maxime expedita
+                        quibusdam excepturi molestiae a, cupiditate asperiores nesciunt quis laboriosam magnam vero
+                        voluptatibus. Minus quisquam illum provident cupiditate delectus unde ducimus accusamus
+                        laboriosam
+                        explicabo rerum sapiente incidunt, fuga laudantium aut soluta, maiores natus quam ipsam
+                        doloribus et
+                        tempora eum corrupti! Atque minima non sed! Blanditiis expedita illum voluptatibus corrupti.
+                        Quod
+                        iure ducimus dignissimos dolore pariatur ipsum quam harum nisi velit corporis, corrupti
+                        laboriosam
+                        ratione ipsam ? </p>
+                </div>
+            </section>
+
+            <!-- FOOTER NOSOTROS -->
+
+            <!-- .row te crea un div con la classe row -->
+
+            <footer class="footerNosotros row">
+                <div class="col-12">
+                    <ul class="rrss">
+                        <li><a href="../index.html"><img class="home" src="../imagenes/logohblanco.png"
+                                    alt="logovanta-blanco"></a>
+                        </li>
+                        <li><a href="https://es-la.facebook.com/login/device-based/regular/login/"><img class="rrssFace"
+                                    src="../imagenes/rs-facebook.png" alt=""></a></li>
+                        <li><a href="https://www.instagram.com/"><img class="rrssIg" src="../imagenes/rs-instagram.png"
+                                    alt=""></a>
+                        </li>
+                        <li><a href="https://www.whatsapp.com/?lang=es"><img class="wspSticky"
+                                    src="../imagenes/rs-whatsapverde.png" alt="wsp-sticky">
+                            </a></li>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- Link de bootstrap Java -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+
 </body>
+
 </html>
+
+
+<!-- 
+    Estructura Basica de BOOTSTRAP
+    .container / container fluid
+        row para las filas
+            .col
+            .col
+
+            SISTEMA DE GRILLAS
+    El sistema de grillas se divide siemore en 12 columnas, las mismas se ubican siempre dentro de una fila div class ".row"
+    
+            ".col-md-4"
+    .col (columna) -md- (medida dispositivo) 4 (cantidad de columnas que ocupa)
+
+    <div class:"container">
+    <div class:"row">
+        <div class="col-lg-4 col-md-6 col-xs-12">columna izquierda</div>
+    </div>
+    </div>
+
+    Debemos indicar un comportamiento para cada resolucion de dispositivo. (si ponemos 2 dispositivos boopstrap entiende que los siguientes mayores y menores van a trabajas con el ultimo comportamiento)
+
+
+
+
+
+
+ -->
