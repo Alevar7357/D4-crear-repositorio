@@ -2304,6 +2304,313 @@ H1 H2 H3 H4 H5 H6 small y lead */
     width: 55px;    
 }
 
+/* GROWSHOP BOOTSTRAP *//* GROWSHOP BOOTSTRAP *//* GROWSHOP BOOTSTRAP *//* GROWSHOP BOOTSTRAP *//* GROWSHOP BOOTSTRAP */
+
+/*  HEADER GROWSHOP *//*  HEADER GROWSHOP *//*  HEADER GROWSHOP *//*  HEADER GROWSHOP */
+/*  HEADER GROWSHOP */
+
+.headerGrowshop{
+    background-color: #F8F9FA;
+}
+
+.headerGrowshop img{
+    width: 200px;
+}
+/*  NAV GROWSHOP *//*  NAV GROWSHOP *//*  NAV GROWSHOP *//*  NAV GROWSHOP *//*  NAV GROWSHOP *//*  NAV GROWSHOP */
+
+
+.containerNav{
+    font-size: 2rem;
+}
+
+.submenuGrowshop{
+    font-size: 2rem;
+}
+
+.buscadorMenu{
+    width: 200px;
+}
+
+/* MAIN GROWSHOP *//* MAIN GROWSHOP *//* MAIN GROWSHOP *//* MAIN GROWSHOP *//* MAIN GROWSHOP *//* MAIN GROWSHOP */
+
+.mainGrowshop{
+    background-color: black;
+    margin: 5px 0px;
+}
+
+.contG1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.contG1 ul{
+    list-style: none;
+}
+
+.contG2 img{
+    margin: 10px;
+}
+
+.contG3 {
+    color: white;
+}
+
+.contG3 h1{
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.contG3 p{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+/* SECTION FERTILIZANTES */
+
+.sectionFerti{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px 0px;
+}
+
+.contFert{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.contFert h1{
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contFert p{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+.tarjetasFerti{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.btnComprar{
+    background-color: #4ab70b;
+}
+
+/* SECTION SUSTRATOS  *//* SECTION SUSTRATOS  */
+
+.sectionSustrato{
+    margin: 5px 0px;
+}
+
+.contSustrato{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.contSustrato h1{
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contSustrato p{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+.tarjetasSustrato{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* SECTION ILUMINACION */
+
+.sectionIluminacion{
+    margin: 5px 0px;
+}
+
+.contIluminacion{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.contIluminacion h1{
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contIluminacion p{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+.tarjetasIluminacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* SECTION VENTILACION */
+
+.sectionVenti{
+    margin: 5px 0px;
+}
+
+.contVenti{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.contVenti h1{
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contVenti p{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+.tarjetasVenti{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* SECTION ACCESORIOS Y PARAFERNALIA */
+
+.sectionAcc{
+    margin: 5px 0px;
+}
+
+.contAcc{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.contAcc h1{
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contAcc p{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+.tarjetasAcc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* FOOTER GROWSHOP *//* FOOTER GROWSHOP *//* FOOTER GROWSHOP *//* FOOTER GROWSHOP *//* FOOTER GROWSHOP */
+
+.footerGrowshop{
+    margin: 10px 0px 0px 0px;;
+    background-color: black;
+}
+.footerGrowshop ul{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.rrss li{
+    list-style: none;
+}
+
+.rrss a{
+    text-decoration: none;
+    color: #4ab70b;
+}
+
+.up{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.home{
+    width: 150px;
+}
+.rrssFace{
+    width: 50px;
+}
+.rrssIg{
+    width: 50px;
+}
+.wspSticky{
+    width: 55px;    
+}
+
+
+
+
 
 
 
