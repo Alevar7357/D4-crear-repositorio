@@ -573,7 +573,6 @@ display:block */
     background-color: black;
 }
 
-
 .pics1 h1{
     color: white;
     font-size: 4rem;
@@ -582,7 +581,7 @@ display:block */
 }
 
 .pics1 img{
-    width: 300px;
+    width: 200px;
     border: solid 3px white;
     padding: 5px;
     filter: grayscale(100%);
@@ -590,7 +589,7 @@ display:block */
 }
 
 .pics1 img:hover{
-    width: 400px;
+    width: 350px;
     margin: 10px;
     filter: none;
 }
@@ -612,7 +611,7 @@ display:block */
 }
 
 .pics2 img{
-    width: 300px;
+    width: 200px;
     border: solid 3px white;
     padding: 5px;
     filter: grayscale(100%);
@@ -620,7 +619,7 @@ display:block */
 }
 
 .pics2 img:hover{
-    width: 400px;
+    width: 350px;
     margin: 10px;
     filter: none;
 }
@@ -643,7 +642,7 @@ display:block */
 }
 
 .pics3 img{
-    width: 300px;
+    width: 200px;
     border: solid 3px white;
     padding: 5px;
     filter: grayscale(100%);
@@ -651,7 +650,7 @@ display:block */
 }
 
 .pics3 img:hover{
-    width: 400px;
+    width: 350px;
     margin: 10px;
     filter: none;
 }
@@ -673,7 +672,7 @@ display:block */
 }   
 
 .pics4 img{
-    width: 300px;
+    width: 200px;
     border: solid 3px white;
     padding: 5px;
     filter: grayscale(100%);
@@ -681,7 +680,7 @@ display:block */
 }
 
 .pics4 img:hover{
-    width: 400px;
+    width: 350px;
     margin: 10px;
     filter: none;
 }
