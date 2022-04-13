@@ -12,9 +12,8 @@ html{
 .contenedor_total{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0.01fr 0.9fr 1fr 1fr 0.1fr;
+    grid-template-rows: 0.01fr 0.9fr 1fr 1fr 0.1fr;
     grid-template-areas: 
-    "logo logo logo "
     "nav nav nav "
     "main main main "
     "cursos  cursos cursos"
@@ -24,66 +23,15 @@ html{
 }
 
 /* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER */
-.headerIndex{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: logo;
-}
-.headerIndex img{
-    width: 400px;
-}
-
-/* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION */
-
-.navegacionIndex{
-    background-color: black;
+.indexGrids{
     grid-area: nav;
 }
-/* PASOS DEL SUBMENU */
-/* Primero a los "li" del menu les digo que se comporte inline-block para poder darle padding arriba y abajo
-Luego le damos position relative, no pierdas el espacio pero dejame ponerte elementos atras */
-.menuIndex li{
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
-    display: inline-block;
-    position: relative;
-    padding: 10px 10px;
+
+.headerIndex {
+    background-color: #F8F9FA; 
 }
-
-/* Sacar los subrayados de los enlaces */
-.menuIndex li a{
-    color: white;
-    text-decoration: none;  
-}
-
-/* Al ul "submenu" le digo que se oculte con display none y ponete en una posicion absolute "vola" todavia no te estoy dando ninguna ubicacion */
-.submenu{
-    display: none;
-    position: absolute;
-}
-
-/* El contenedor ya esta volando pero las li del submenu quiero que se comporten como bloque uno abajo de otro
-display block */
-/* Al ser elementos de bloque les puedo dar un padding */
-
-.submenu li{
-    display: block;
-    background-color: black;
-    padding: 5px 0px;
-}
-
-/* "hover" dice que cuando pases por encima de este elemento */
-/* .menu estas llamando la clase
-.li elementos:cuando pases por encima hover mostrame el elemento ul
-display:block */
-
-/* Es decir ahora si mostrame el elemento */
-
-.menuIndex li:hover ul{
-    display: block;
+.headerIndex img {
+    width: 200px; 
 }
 
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
@@ -118,7 +66,7 @@ display:block */
 }
 
 
-/* SECTION CURSOS *//* SECTION CURSOS *//* SECTION CURSOS *//* SECTION CURSOS *//* SECTION CURSOS */
+/* SECTION index CURSOS */
 .cursosIndex{
     background-color: black;
     color: white;
@@ -166,7 +114,7 @@ display:block */
 }
 
 
-/* SECTION TIENDA *//* SECTION TIENDA *//* SECTION TIENDA *//* SECTION TIENDA *//* SECTION TIENDA */
+/* SECTION index TIENDA */
 
 .tiendaIndex{
     grid-area: tienda;
@@ -224,7 +172,7 @@ display:block */
 }
 
 
-/* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
+/* FOOTER index */
 
 .footerIndex{
     background-color: black;
@@ -257,9 +205,8 @@ display:block */
     .contenedor_total{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 0.1fr 0.4fr 0.5fr 0.5fr 0.1fr;
+        grid-template-rows: 0.1fr 0.4fr 0.5fr 0.5fr 0.1fr;
         grid-template-areas: 
-        "logo logo"
         "nav nav"
         "main main"
         "cursos cursos"
@@ -270,18 +217,16 @@ display:block */
         grid-row-gap: 0px;
     }
 
-    .headerIndex {
-        grid-area: logo;
+    /* HEADER */
+    .indexGrids{
+        grid-area: nav;
     }
 
-    .navegacionIndex{
-        grid-area: nav;
-        background-color: rgba(9, 180, 9, 0.836);
-        color: black;
+    .headerIndex img{
+        background-color: #F8F9FA;
     }
-    .submenu li{
-        background-color: rgba(9, 180, 9, 0.836);
-    }
+    
+    /* MAIN */
     .mainIndex{
         grid-area: main;
         display: flex;
@@ -297,12 +242,14 @@ display:block */
         padding: 0px;
         width: 400px;
     }
+    /* SECTION main CURSOS */
     .cursosIndex{
         grid-area: cursos;
     }
     .contIndex img{
         width: 400px;
-    }
+    }   
+    /* SECTION main TIENDA */
     .tiendaIndex{
         grid-area: tienda;
     }
@@ -310,7 +257,7 @@ display:block */
     .tiendaImga img{
         width: 400px;
     }
-
+/* FOOTER */
     .footerIndex{
         grid-area: footer;
     }
@@ -322,9 +269,8 @@ display:block */
     .contenedor_total{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 0.1fr 0.4fr 0.5fr 0.5fr 0.1fr;
+        grid-template-rows: 0.1fr 0.4fr 0.5fr 0.5fr 0.1fr;
         grid-template-areas: 
-        "logo"
         "nav"
         "main"
         "cursos"
@@ -332,32 +278,15 @@ display:block */
         "footer"
         ; 
     }
-    .headerIndex{
-        grid-area: logo;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .headerIndex img{
-        width: 320px;
-    }
-    .navegacionIndex{
+    /* HEADER */
+    .indexGrids{
         grid-area: nav;
-        background-color: grey;
     }
-    .navegacionIndex ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+
+    .headerIndex img{
+        background-color: #F8F9FA;
     }
-    
-    .navegacionIndex ul li{
-        font-size: 4.5rem;
-    }
-    .menuIndex li ul{
-        display: none;
-    }
-    
+    /* MAIN */
     .mainIndex{
         grid-area: main;
     }
@@ -368,6 +297,8 @@ display:block */
     .mainIndex img{
         width: 300px;
     }
+
+    /* SECTION index CURSOS */
     .cursosIndex {
         grid-area: cursos;
         display: flex;
@@ -382,7 +313,7 @@ display:block */
     .cursosIndex p{
         font-size: 2rem;
     }
-    
+    /* SECTION index TIENDA */
     .tiendaIndex{
         grid-area: tienda;
     }
@@ -390,7 +321,7 @@ display:block */
     .tiendaImga img{
         width: 300px;
     }
-
+/* FOOTER */
     .footerIndex p{
         font-size: 2rem;
     }
@@ -414,9 +345,8 @@ display:block */
 .contenedorPics{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0.01fr 0.9fr 1fr 0.1fr;
+    grid-template-rows: 0.01fr 0.4fr 1fr 0.1fr;
     grid-template-areas: 
-    "logo logo logo logo "
     "nav nav nav nav "
     "main main main main "
     "sesion1 sesion2 sesion3 sesion4" 
@@ -425,67 +355,18 @@ display:block */
 }
 
 /* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER */
-.headerPics{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: logo;
-}
-.headerPics img{
-    width: 400px;
-}
 
-/* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION */
-
-.navegacionPics{
-    background-color: black;
+.picsGrid{
     grid-area: nav;
 }
-/* PASOS DEL SUBMENU */
-/* Primero a los "li" del menu les digo que se comporte inline-block para poder darle padding arriba y abajo
-Luego le damos position relative, no pierdas el espacio pero dejame ponerte elementos atras */
-.menuPics li{
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
-    display: inline-block;
-    position: relative;
-    padding: 10px 10px;
+
+.headerPics {
+    background-color: #F8F9FA; }
+    
+.headerPics img {
+    width: 200px; 
 }
 
-/* Sacar los subrayados de los enlaces */
-.menuPics li a{
-    color: white;
-    text-decoration: none;  
-}
-
-/* Al ul "submenu" le digo que se oculte con display none y ponete en una posicion absolute "vola" todavia no te estoy dando ninguna ubicacion */
-.submenuPics{
-    display: none;
-    position: absolute;
-}
-
-/* El contenedor ya esta volando pero las li del submenu quiero que se comporten como bloque uno abajo de otro
-display block */
-/* Al ser elementos de bloque les puedo dar un padding */
-
-.submenuPics li{
-    display: block;
-    background-color: black;
-    padding: 5px 0px;
-}
-
-/* "hover" dice que cuando pases por encima de este elemento */
-/* .menu estas llamando la clase
-.li elementos:cuando pases por encima hover mostrame el elemento ul
-display:block */
-
-/* Es decir ahora si mostrame el elemento */
-
-.menuPics li:hover ul{
-    display: block;
-}
 
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
 .mainPics{
@@ -700,6 +581,10 @@ display:block */
     align-items: baseline;
 }
 
+.rrssp{
+    list-style: none;
+}
+
 .homep{
     width: 150px;
 }
@@ -723,9 +608,8 @@ display:block */
     .contenedorPics{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 0.01fr 0.9fr 1fr 1fr 0.1fr;
+    grid-template-rows: 0.01fr 0.9fr 1fr 1fr 0.1fr;
     grid-template-areas: 
-    "logo logo"
     "nav nav"
     "main main"
     "sesion1 sesion2" 
@@ -735,19 +619,10 @@ display:block */
 }
 
 /* HEADER */
-.headerPics{
-    grid-area: logo;
-
-}
-/* NAV */
-.navegacionPics{
-    background-color: #4ab70b;
+.picsGrid{
     grid-area: nav;
 }
 
-.submenuPics{
-    background-color: #4ab70b;
-}
 
 /* MAIN */
 .mainPics{
@@ -907,9 +782,8 @@ display:block */
     .contenedorPics{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.01fr 0.9fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-rows: 0.01fr 0.9fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
     grid-template-areas: 
-    "logo"
     "nav"
     "main"
     "sesion1"
@@ -917,40 +791,14 @@ display:block */
     "sesion3" 
     "sesion4" 
     "footer"
-    
     ; 
 }
 
 /* HEADER */
-.headerPics{
-    grid-area: logo;
-}
 
-.headerPics img{
-    width: 250px;
-}
-
-/* NAV */
-.navegacionPics{
-    background-color: grey;
+.picsGrid{
     grid-area: nav;
 }
-
-.menuPics{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center
-}
-
-.menuPics li{
-    font-size: 2.5rem;
-}
-.submenuPics li{
-    background-color: #4ab70b;
-    display: none;
-}
-
 /* MAIN */
 .mainPics{
     grid-area: main;
@@ -1139,50 +987,11 @@ display:block */
 /* PAGINA BLOG *//* PAGINA BLOG *//* PAGINA BLOG *//* PAGINA BLOG *//* PAGINA BLOG *//* PAGINA BLOG */
 
 /* HEADER BLOG *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER */
-.headerBlog{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    
-    
+.headerBlog {
+    background-color: #F8F9FA; 
 }
-.headerBlog img{
-    width: 400px;
-}
-
-/* NAVEGACION BLOG *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION */
-
-.navegacionBlog{
-    background-color: black;
-    grid-area: nav;
-}
-.menuBlog li{
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
-    display: inline-block;
-    position: relative;
-    padding: 10px 10px;
-}
-
-.menuBlog li a{
-    color: white;
-    text-decoration: none;  
-}
-
-.submenuBlog{
-    display: none;
-    position: absolute;
-}
-
-.submenuBlog li{
-    display: block;
-    background-color: black;
-    padding: 5px 0px;
-}
-
-.menuBlog li:hover ul{
-    display: block;
+.headerBlog img {
+    width: 200px; 
 }
 
 /* MAIN BLOG *//* MAIN BLOG *//* MAIN BLOG *//* MAIN BLOG *//* MAIN BLOG *//* MAIN BLOG */
@@ -1377,58 +1186,11 @@ display:block */
 
 /* TAMAÑO CELULAR */
 @media screen and (max-width: 426px){
-    
-    .headerBlog{
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        
-        
+    .headerBlog {
+        background-color: #F8F9FA; 
     }
-    .headerBlog img{
-        width: 200px;
-    }
-    
-    /* NAVEGACION BLOG  *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION */
-    
-    .navegacionBlog{
-        background-color: black;
-    }
-
-    .menuBlog{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menuBlog li{
-        font-size: 2rem;
-        font-weight: 600;
-        color: white;
-        display: inline-block;
-        position: relative;
-        padding: 10px 10px;
-    }
-    
-    .menuBlog li a{
-        color: white;
-        text-decoration: none;  
-    }
-    
-    .submenuBlog{
-        visibility: hidden;
-        display: none;
-        position: absolute;
-    }
-    
-    .submenuBlog li{
-        display: block;
-        background-color: black;
-        padding: 5px 0px;
-    }
-    
-    .menuBlog li:hover ul{
-        display: block;
+    .headerBlog img {
+        width: 200px; 
     }
     
     /* MAIN BLOG *//* MAIN BLOG *//* MAIN BLOG *//* MAIN BLOG *//* MAIN BLOG *//* MAIN BLOG */
@@ -1597,49 +1359,11 @@ display:block */
 
 
 /* HEADER CONTACTO *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER */
-.headerContacto{
-    background-color: white;
-    display: flex;
-    justify-content: center;
+.headerContacto {
+    background-color: #F8F9FA; 
 }
-
-.headerContacto img{
-    width: 400px;
-}
-
-/* CONTACTO BLOG *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION */
-
-.navegacionContacto{
-    background-color: black;
-    grid-area: nav;
-}
-.menuContacto li{
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
-    display: inline-block;
-    position: relative;
-    padding: 10px 10px;
-}
-
-.menuContacto li a{
-    color: white;
-    text-decoration: none;  
-}
-
-.submenuContacto{
-    display: none;
-    position: absolute;
-}
-
-.submenuContacto li{
-    display: block;
-    background-color: black;
-    padding: 5px 0px;
-}
-
-.menuContacto li:hover ul{
-    display: block;
+.headerContacto img {
+    width: 200px; 
 }
 
 /* MAIN CONTACTO *//* MAIN CONTACTO *//* MAIN CONTACTO *//* MAIN CONTACTO *//* MAIN CONTACTO */
@@ -1686,7 +1410,7 @@ display:block */
 }
 
 .textarea:hover{
-    height: 200px;
+    height: 100px;
     font-size: 3rem;
 }
 
@@ -1730,6 +1454,14 @@ display:block */
 
 /* TAMAÑO TABLET */
 @media screen and (max-width: 1025px){
+
+    .headerContacto {
+        background-color: #F8F9FA; 
+    }
+    .headerContacto img {
+        width: 200px; 
+    }
+
     .mainContacto{
         background-color: black;
     }
@@ -1803,44 +1535,11 @@ display:block */
     
     /* NAVEGACION BLOG  *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION */
     
-    .navegacionContacto{
-        background-color: black;
+    .headerContacto {
+        background-color: #F8F9FA; 
     }
-
-    .menuContacto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menuContacto li{
-        font-size: 2rem;
-        font-weight: 600;
-        color: white;
-        display: inline-block;
-        position: relative;
-        padding: 10px 10px;
-    }
-    
-    .menuContacto li a{
-        color: white;
-        text-decoration: none;  
-    }
-    
-    .submenuContacto{
-        visibility: hidden;
-        display: none;
-        position: absolute;
-    }
-    
-    .submenuContacto li{
-        display: block;
-        background-color: black;
-        padding: 5px 0px;
-    }
-    
-    .menuContacto li:hover ul{
-        display: block;
+    .headerContacto img {
+        width: 200px; 
     }
 
     .textarea{
@@ -1855,50 +1554,11 @@ display:block */
 
 /* HEADER CURSOS *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER */
 
-.headerCursos{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    
-    
+.headerCursos {
+    background-color: #F8F9FA; 
 }
-.headerCursos img{
-    width: 400px;
-}
-
-/* NAVEGACION CURSOS*//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION *//* NAVEGACION */
-
-.navegacionCursos{
-    background-color: black;
-    grid-area: nav;
-}
-.menuCursos li{
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
-    display: inline-block;
-    position: relative;
-    padding: 10px 10px;
-}
-
-.menuCursos li a{
-    color: white;
-    text-decoration: none;  
-}
-
-.submenuCursos{
-    display: none;
-    position: absolute;
-}
-
-.submenuCursos li{
-    display: block;
-    background-color: black;
-    padding: 5px 0px;
-}
-
-.menuCursos li:hover ul{
-    display: block;
+.headerCursos img {
+    width: 200px; 
 }
 
 /* MAIN CURSOS *//* MAIN CURSOS *//* MAIN CURSOS *//* MAIN CURSOS *//* MAIN CURSOS *//* MAIN CURSOS */
@@ -2127,16 +1787,11 @@ display:block */
 /* TAMAÑO CELULAR CURSOS */
 
 @media screen and (max-width: 426px){
-    .headerCursos{
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        
+    .headerCursos {
+        background-color: #F8F9FA; 
     }
-
-    .headerCursos img{
-        width: 200px;
-    
+    .headerCursos img {
+        width: 200px; 
     }
 
     .mainCursos{
@@ -2155,7 +1810,7 @@ display:block */
 
 }
 
-/* GROWSHOP CON BOOTSTRAP *//* GROWSHOP CON BOOTSTRAP *//* GROWSHOP CON BOOTSTRAP *//* GROWSHOP CON BOOTSTRAP */
+/* PAGINA NOSOTROS */
 
 /* BOOTSTRAP se maneja con clases
 en textro tenemos 
@@ -2182,41 +1837,6 @@ H1 H2 H3 H4 H5 H6 small y lead */
 .buscadorMenu{
     width: 200px;
 }
-/* NAV VIEJO  */
-
-/* .navegacionNosotros{
-    background-color: black;
-    margin: 10px 0px;
-}
-
-.menuNosotros li{
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
-    display: inline-block;
-    position: relative;
-    padding: 10px 10px;
-}
-
-.menuNosotros li a{
-    color: white;
-    text-decoration: none;  
-}
-
-.submenuNosotros{
-    display: none;
-    position: absolute;
-}
-
-.submenuNosotros li{
-    display: block;
-    background-color: black;
-    padding: 5px 0px;
-}
-
-.menuNosotros li:hover ul{
-    display: block; 
-} */
 
 /* MAIN NOSOTROS *//* MAIN NOSOTROS *//* MAIN NOSOTROS *//* MAIN NOSOTROS *//* MAIN NOSOTROS *//* MAIN NOSOTROS */
 
@@ -2350,8 +1970,6 @@ H1 H2 H3 H4 H5 H6 small y lead */
     list-style: none;
 }
 
-.contG2 img{
-}
 
 .contG3 {
     color: white;

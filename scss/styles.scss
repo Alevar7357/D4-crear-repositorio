@@ -1,0 +1,39 @@
+@import "variables"; 
+@import "blog";
+@import "contacto";
+@import "cursos";
+@import "growshop";
+@import "index";
+@import "quienes.somos";
+@import "sesiones";
+
+
+/* LA HOJA QUE NO TIENE "__" ES LA HOJA PRINCIPAL */
+
+/* Para crear el archi le ponemos el "_" para importar solo ponemos @"blog"; */
+
+
+/* h1{
+    color: red;
+
+    p{
+        color: violet;
+    }
+}
+
+ul{
+    color: white;
+    ul{
+        color: aqua;
+        a{
+            text-decoration: none;
+            color: blue;
+            &:hover{
+                color: yellow;
+            }
+        }
+        &:hover{
+            color: gr;
+        }
+    }
+} */

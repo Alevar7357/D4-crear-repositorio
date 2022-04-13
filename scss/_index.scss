@@ -1,0 +1,354 @@
+/* ___________INDEX______________ */
+
+.contenedor_total {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.01fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-areas:"nav nav nav "
+                        "main main main "
+                        "cursos  cursos cursos"
+                        "tienda tienda tienda "
+                        "footer footer footer ";
+}
+
+/* HEADER */
+
+.indexGrids {
+    grid-area: nav;
+}
+
+.headerIndex {
+    background-color: #F8F9FA;
+
+    img {
+        width: 200px;
+    }
+}
+
+/* MAIN */
+
+
+.mainIndex {
+    grid-area: main;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 5px 0px;
+
+    h1 {
+        font-size: 8rem;
+        margin: 25px 10px;
+        font-style: italic;
+        font-weight: 700;
+    }
+
+    img {
+        width: 600px;
+        padding: 100px 10px;
+
+        /* border: solid 4px #4ab70b; */
+    }
+
+    p {
+        font-size: 2rem;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+/* SECTION index CURSOS */
+
+.cursosIndex {
+    background-color: black;
+    color: white;
+    grid-area: cursos;
+    display: flex;
+    margin-bottom: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    h1 {
+        font-size: 4rem;
+        margin: 10px;
+        font-style: italic;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin: 25px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 750px;
+        margin: 25px;
+    }
+}
+
+.indexIrcurso {
+    animation: jackInTheBox;
+    animation-duration: 2s;
+}
+
+.cursosIndex a {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    margin: 10px 25px;
+    padding: 5px;
+    border: solid 3px rgba(9, 180, 9, 0.836);
+}
+
+/* SECTION index TIENDA */
+
+.tiendaIndex {
+    grid-area: tienda;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.tiendaTp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 25px;
+
+    h1 {
+        font-size: 4rem;
+        margin-right: 25px;
+        font-style: italic;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin-right: 25px;
+    }
+}
+
+.tiendaImga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 700px;
+        margin: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 3rem;
+        color: white;
+        background-color: black;
+        border: solid 3px rgba(9, 180, 9, 0.836);
+        margin: 25px;
+        padding: 5px;
+    }
+}
+
+.indexIrtienda {
+    animation: jackInTheBox;
+    animation-duration: 2s;
+}
+
+/* FOOTER index */
+
+.footerIndex {
+    background-color: black;
+    grid-area: footer;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: baseline;
+    }
+}
+
+.home {
+    width: 150px;
+}
+
+.rrssFace,
+.rrssIg {
+    width: 50px;
+}
+
+.wspSticky {
+    width: 55px;
+}
+
+/* TABLET */
+
+@media screen and (max-width: 1025px) {
+    .contenedor_total {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 0.4fr 0.5fr 0.5fr 0.1fr;
+        grid-template-areas:"nav nav"
+                            "main main"
+                            "cursos cursos"
+                            "tienda tienda"
+                            "footer footer";
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    /* HEADER */
+
+    .indexGrids {
+        grid-area: nav;
+    }
+
+    .headerIndex img {
+        background-color: #F8F9FA;
+    }
+
+    /* MAIN */
+
+    .mainIndex {
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 6rem;
+        }
+
+        img {
+            margin: 10px;
+            padding: 0px;
+            width: 400px;
+        }
+    }
+
+    /* SECTION main CURSOS */
+
+    .cursosIndex {
+        grid-area: cursos;
+    }
+
+    .contIndex img {
+        width: 400px;
+    }
+
+    /* SECTION main TIENDA */
+
+    .tiendaIndex {
+        grid-area: tienda;
+    }
+
+    .tiendaImga img {
+        width: 400px;
+    }
+
+    /* FOOTER */
+
+    .footerIndex {
+        grid-area: footer;
+    }
+}
+
+/* TAMAÑO MOBILE */
+
+@media screen and (max-width: 460px) {
+    .contenedor_total {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.4fr 0.5fr 0.5fr 0.1fr;
+        grid-template-areas:"nav"
+                            "main"
+                            "cursos"
+                            "tienda"
+                            "footer";
+    }
+
+    /* HEADER */
+
+    .indexGrids {
+        grid-area: nav;
+    }
+
+    .headerIndex img {
+        background-color: #F8F9FA;
+    }
+
+    /* MAIN */
+
+    .mainIndex {
+        grid-area: main;
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        img {
+            width: 300px;
+        }
+    }
+
+    /* SECTION index CURSOS */
+
+    .cursosIndex {
+        grid-area: cursos;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contIndex img {
+        width: 300px;
+    }
+
+    .cursosIndex p {
+        font-size: 2rem;
+    }
+
+    /* SECTION index TIENDA */
+
+    .tiendaIndex {
+        grid-area: tienda;
+    }
+
+    .tiendaImga img {
+        width: 300px;
+    }
+
+    /* FOOTER */
+
+    .footerIndex {
+        p {
+            font-size: 2rem;
+        }
+
+        grid-area: footer;
+        background-color: gray;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,390 @@
+/* _____________BLOG___________________ */
+
+.headerBlog {
+    background-color: #F8F9FA;
+
+    img {
+        width: 200px;
+    }
+}
+
+/* MAIN BLOG */
+
+.mainBlog {
+    background-color: black;
+    color: white;
+    display: flex;
+    margin: 10px;
+}
+
+.imgMainblog {
+    width: 1000px;
+}
+
+.contBlog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainBlogT {
+    padding: 15px;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.mainBlogP {
+    padding: 25px;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/* SECTION BLOG */
+
+
+.noticiasBlog {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.art1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    margin: 5px;
+}
+
+.art1T {
+    text-decoration: underline;
+    margin: 10px;
+    font-size: 5rem;
+}
+
+.art1P {
+    text-align: justify;
+    margin: 15px 25px;
+    font-size: 2rem;
+}
+
+.art1Img {
+    width: 400px;
+}
+
+.art1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.art2 {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.art2T {
+    text-decoration: underline;
+    margin: 10px;
+    font-size: 5rem;
+}
+
+.art2P {
+    text-align: justify;
+    margin: 15px 25px;
+    font-size: 2rem;
+}
+
+.art2Img {
+    width: 400px;
+}
+
+.art2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.art3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    margin: 5px;
+}
+
+.art3T {
+    text-decoration: underline;
+    margin: 10px;
+    font-size: 5rem;
+}
+
+.art3P {
+    text-align: justify;
+    margin: 15px 25px;
+    font-size: 2rem;
+}
+
+.art3Img {
+    width: 400px;
+}
+
+.art3 a {
+    text-decoration: none;
+    color: black;
+}
+
+/* FOOTER BLOG */
+
+
+.footerBlog {
+    background-color: black;
+    grid-area: footer;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: baseline;
+    }
+}
+
+.home {
+    width: 150px;
+}
+
+.rrssFace,
+.rrssIg {
+    width: 50px;
+}
+
+.wspSticky {
+    width: 55px;
+}
+
+/* TAMAÑO TABLET */
+@media screen and (max-width: 1025px) {
+    .mainBlog {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .imgMainblog {
+        margin: 25px 0px;
+        width: 500px;
+        border: solid 5px #4ab70b;
+    }
+
+    .contBlog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainBlogT {
+        text-align: center;
+        padding: 10px;
+        font-size: 5rem;
+        font-style: italic;
+        font-weight: 700;
+        transform: none;
+    }
+
+    .mainBlogP {
+        padding: 25px;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+/* TAMAÑO CELULAR */
+@media screen and (max-width: 426px) {
+    .headerBlog {
+        background-color: #F8F9FA;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    /* MAIN BLOG */
+
+
+    .mainBlog {
+        background-color: black;
+        color: white;
+        display: flex;
+        margin: 5px 0px;
+    }
+
+    .imgMainblog {
+        width: 250px;
+    }
+
+    .contBlog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .mainBlogT {
+        padding: 15px;
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    .mainBlogP {
+        padding: 25px;
+        font-size: 1rem;
+        text-align: justify;
+        margin: 5px;
+        padding: 0px;
+    }
+
+    /* SECTION BLOG */
+
+
+    .noticiasBlog {
+        margin: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .art1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        color: black;
+        margin: 5px;
+    }
+
+    .art1T {
+        text-decoration: underline;
+        margin: 10px 0px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .art1P {
+        text-align: justify;
+        margin: 15px 0px;
+        font-size: 1rem;
+    }
+
+    .art1Img {
+        width: 300px;
+    }
+
+    .art1 a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .art2 {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .art2T {
+        text-decoration: underline;
+        margin: 10px 0px;
+        font-size: 2rem;
+    }
+
+    .art2P {
+        text-align: justify;
+        margin: 15px 0px;
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    .art2Img {
+        width: 300px;
+    }
+
+    .art2 a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .art3 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        color: black;
+        margin: 5px;
+    }
+
+    .art3T {
+        text-decoration: underline;
+        margin: 10px 0px;
+        font-size: 2rem;
+    }
+
+    .art3P {
+        text-align: justify;
+        margin: 15px 0px;
+        font-size: 1rem;
+    }
+
+    .art3Img {
+        width: 300px;
+    }
+
+    .art3 a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* FOOTER BLOG */
+
+    .footerBlog {
+        background-color: black;
+        grid-area: footer;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            align-items: baseline;
+        }
+    }
+
+    .home {
+        width: 150px;
+    }
+
+    .rrssFace,
+    .rrssIg {
+        width: 50px;
+    }
+
+    .wspSticky {
+        width: 55px;
+    }
+}

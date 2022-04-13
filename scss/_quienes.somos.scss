@@ -1,0 +1,98 @@
+/* _____________QUIENES SOMOS___________________ */
+
+
+/* MAIN NOSOTROS */
+
+.mainNosotros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: $colorPrincipal;
+
+    h1 {
+        font-size: $tamañoh1;
+        color: white;
+        margin: 20px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 3rem;
+        color: white;
+        margin: 20px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+    }
+}
+
+/* SECTION NOSOTROS */
+
+.sectionNosotros {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .nosotrosC1 {
+        Img {
+            margin: 10px 0px 0px 0px;
+        }
+    }
+
+    .nosotrosC2 {
+        h1 {
+            margin: 20px;
+            font-size: 4rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+
+
+        p {
+            font-size: 1.5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+        }
+    }
+}
+
+/* FOOTER NOSOTROS */
+
+.footerNosotros {
+    margin: 10px 0px 0px 0px;
+    ;
+    background-color: black;
+
+    div {
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            align-items: baseline;
+
+            li {
+                list-style: none;
+
+                .home {
+                    width: 150px;
+                }
+
+                .rrssFace {
+                    width: 50px;
+                }
+
+                .rrssIg {
+                    width: 50px;
+                }
+
+                .wspSticky {
+                    width: 55px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,302 @@
+/*  HEADER GROWSHOP */
+
+.headerGrowshop {
+    background-color: #F8F9FA;
+
+    img {
+        width: 200px;
+    }
+}
+
+/*  NAV GROWSHOP */
+
+.containerNav{
+    font-size: 2rem;
+}
+
+.submenuGrowshop {
+    font-size: 2rem;
+}
+
+.buscadorMenu {
+    width: 200px;
+}
+
+/* MAIN GROWSHOP */
+
+.mainGrowshop {
+    background-color: black;
+    margin: 5px 0px;
+}
+
+.contG1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+    ul {
+        list-style: none;
+    }
+}
+
+
+.contG3 {
+    color: white;
+
+    h1 {
+        font-size: 3.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+    }
+}
+
+/* SECTION FERTILIZANTES */
+
+.sectionFerti {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px 0px;
+}
+
+.contFert {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    h1 {
+        font-size: 4rem;
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        text-align: center;
+    }
+}
+
+.tarjetasFerti {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.btnComprar {
+    background-color: #4ab70b;
+}
+
+/* SECTION SUSTRATOS  */
+
+/* SECTION SUSTRATOS  */
+
+.sectionSustrato {
+    margin: 5px 0px;
+}
+
+.contSustrato {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    h1 {
+        font-size: 4rem;
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        text-align: center;
+    }
+}
+
+.tarjetasSustrato {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* SECTION ILUMINACION */
+
+.sectionIluminacion {
+    margin: 5px 0px;
+}
+
+.contIluminacion {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    h1 {
+        font-size: 4rem;
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        text-align: center;
+    }
+}
+
+.tarjetasIluminacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* SECTION VENTILACION */
+
+.sectionVenti {
+    margin: 5px 0px;
+}
+
+.contVenti {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    h1 {
+        font-size: 4rem;
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        text-align: center;
+    }
+}
+
+.tarjetasVenti {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* SECTION ACCESORIOS Y PARAFERNALIA */
+
+.sectionAcc {
+    margin: 5px 0px;
+}
+
+.contAcc {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    h1 {
+        font-size: 4rem;
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        text-align: center;
+    }
+}
+
+.tarjetasAcc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* FOOTER GROWSHOP */
+
+
+.footerGrowshop {
+    margin: 10px 0px 0px 0px;
+    background-color: black;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: baseline;
+    }
+}
+
+.rrss {
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #4ab70b;
+    }
+}
+
+.up {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.home {
+    width: 150px;
+}
+
+.rrssFace,
+.rrssIg {
+    width: 50px;
+}
+
+.wspSticky {
+    width: 55px;
+}

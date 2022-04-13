@@ -1,0 +1,199 @@
+/* ____________CONTACTO___________ */
+
+/* HEADER CONTACTO */
+
+
+.headerContacto {
+    background-color: #F8F9FA;
+
+    img {
+        width: 200px;
+    }
+}
+
+/* MAIN CONTACTO */
+
+
+
+.mainContacto {
+    background-color: black;
+}
+
+.contactoT {
+    color: white;
+}
+
+.formContacto {
+    fieldset {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    display: flex;
+    color: white;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0px;
+    font-size: 2rem;
+
+    label {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 5px 5px;
+        padding: 5px 5px;
+    }
+
+    legend {
+        margin: 10px 10px;
+    }
+}
+
+.textarea {
+    transition: all 2s;
+
+    &:hover {
+        height: 100px;
+        font-size: 3rem;
+    }
+}
+
+.botonForm {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+
+    input {
+        margin: 5px;
+    }
+}
+
+/* FOOTER CONTACTO */
+
+.footerContacto {
+    background-color: black;
+    grid-area: footer;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: baseline;
+    }
+}
+
+.home {
+    width: 150px;
+}
+
+.rrssFace,
+.rrssIg {
+    width: 50px;
+}
+
+.wspSticky {
+    width: 55px;
+}
+
+/* TAMAÑO TABLET */
+@media screen and (max-width: 1025px) {
+    .headerContacto {
+        background-color: #F8F9FA;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    .mainContacto {
+        background-color: black;
+    }
+
+    .contactoT {
+        color: white;
+    }
+
+    .formContacto {
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        display: flex;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 10px 0px;
+        font-size: 2rem;
+
+        label {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            margin: 5px 5px;
+            padding: 5px 5px;
+        }
+
+        legend {
+            margin: 10px 10px;
+        }
+    }
+
+    .textarea {
+        height: 50rem;
+        width: 50rem;
+    }
+
+    .botonForm {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 5px;
+
+        input {
+            margin: 5px;
+        }
+    }
+}
+
+/* TAMAÑOS CELULAR */
+@media screen and (max-width: 426px) {
+    .headerContacto {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 200px;
+            width: 200px;
+        }
+
+        background-color: #F8F9FA;
+    }
+
+    /* NAVEGACION BLOG  */
+
+    /* NAVEGACION */
+
+    /* NAVEGACION */
+
+    /* NAVEGACION */
+
+    /* NAVEGACION */
+
+    /* NAVEGACION */
+
+    .textarea {
+        height: 20rem;
+        width: 30rem;
+    }
+}
