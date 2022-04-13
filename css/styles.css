@@ -1,4 +1,11 @@
-@charset "UTF-8";
+*{
+  margin: 0px;
+  padding: 0px;
+}
+html{
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
 /* Las variables comienzan con el simbolo $ */
 /* _____________BLOG___________________ */
 .headerBlog {
@@ -842,7 +849,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.01fr 0.5fr 0.5fr 0.5fr 0.1fr;
-  grid-template-areas: "nav nav nav " "main main main " "cursos  cursos cursos" "tienda tienda tienda " "footer footer footer "; }
+  grid-template-areas: "nav nav nav "
+ "main main main "
+ "cursos  cursos cursos"
+ "tienda tienda tienda "
+ "footer footer footer "; }
 
 /* HEADER */
 .indexGrids {
@@ -989,7 +1000,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr 0.4fr 0.5fr 0.5fr 0.1fr;
-    grid-template-areas: "nav nav" "main main" "cursos cursos" "tienda tienda" "footer footer";
+    grid-template-areas: "nav nav"
+ "main main"
+ "cursos cursos"
+ "tienda tienda"
+ "footer footer";
     grid-column-gap: 0px;
     grid-row-gap: 0px; }
   /* HEADER */
@@ -1030,7 +1045,11 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 0.4fr 0.5fr 0.5fr 0.1fr;
-    grid-template-areas: "nav" "main" "cursos" "tienda" "footer"; }
+    grid-template-areas: "nav"
+ "main"
+ "cursos"
+ "tienda"
+ "footer"; }
   /* HEADER */
   .indexGrids {
     grid-area: nav; }
@@ -1136,7 +1155,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.01fr 0.4fr 1fr 0.1fr;
-  grid-template-areas: "nav nav nav nav " "main main main main "   "sesion1 sesion2 sesion3 sesion4"    "footer footer footer footer"; }
+  grid-template-areas: "nav nav nav nav "
+ "main main main main "  
+ "sesion1 sesion2 sesion3 sesion4"   
+ "footer footer footer footer"; }
 
 /* HEADER */
 .picsGrid {
@@ -1326,7 +1348,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.01fr 0.9fr 1fr 1fr 0.1fr;
-    grid-template-areas: "nav nav" "main main" "sesion1 sesion2" "sesion4 sesion3" "footer footer"; }
+    grid-template-areas: "nav nav"
+ "main main"
+ "sesion1 sesion2"
+ "sesion4 sesion3"
+ "footer footer"; }
   /* HEADER */
   .picsGrid {
     grid-area: nav; }
@@ -1448,7 +1474,13 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.01fr 0.9fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
-    grid-template-areas: "nav" "main" "sesion1" "sesion2" "sesion3" "sesion4" "footer"; }
+    grid-template-areas: "nav"
+ "main"
+ "sesion1"
+ "sesion2"
+ "sesion3"
+ "sesion4"
+ "footer"; }
   /* HEADER */
   .picsGrid {
     grid-area: nav; }
