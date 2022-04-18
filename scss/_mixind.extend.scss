@@ -1,0 +1,55 @@
+/* Mapas pagina blog */
+
+$titulosblog:   ( 
+    mainBlogT: green,
+    art1T: red,
+    art2T: blue,
+    art3T: yellow
+);
+
+@each $fondo, $color in $titulosblog {
+    .#{$fondo}{
+        background-color: $color;
+    }
+    
+
+/* Extend pagina sesiones */
+
+.pics2 {
+    @extend .pics1;
+    background-color: white;
+    grid-area: sesion2;
+
+    .pics4 {
+        @extend .pics1;
+        background-color: white;
+        grid-area: sesion4;
+    
+
+/* Mixin pagina cursos */
+
+@mixin cursos ($display,$direction, $alineacion, $ancho, $alto, $borde, $margen, $fondo) {
+    display: $display;
+    flex-direction: $direction;
+    align-items: $alineacion;
+    width: $ancho;
+    height: $alto;
+    border: $borde;
+    margin: $margen;
+    background-color: black;    
+}
+
+.cultivoInt{
+    @include cursos (flex, column, center, 400px, 600px, solid 3px springgreen, 20px 5px, black)
+}
+
+.cultivoExt{
+    @include cursos (flex, column, center, 400px, 600px, solid 3px springgreen, 20px 5px, white)
+}
+
+.cultivoHidro{
+    @include cursos (flex, column, center, 400px, 600px, solid 3px springgreen, 20px 5px, black)
+} 
+
+
+
