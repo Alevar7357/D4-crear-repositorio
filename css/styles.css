@@ -1,11 +1,4 @@
-*{
-  margin: 0px;
-  padding: 0px;
-}
-html{
-  font-size: 62.5%;
-  font-family: 'Montserrat', sans-serif;
-}
+@charset "UTF-8";
 /* Las variables comienzan con el simbolo $ */
 /* _____________BLOG___________________ */
 .headerBlog {
@@ -471,7 +464,7 @@ html{
   height: 200px;
   margin: 10px 5px; }
 
-.cultivoInt h1 {
+.cultivoInt h2 {
   color: white;
   font-size: 3rem;
   text-align: center;
@@ -505,7 +498,7 @@ html{
   height: 200px;
   margin: 10px 5px; }
 
-.cultivoExt h1 {
+.cultivoExt h2 {
   color: white;
   font-size: 3rem;
   text-align: center;
@@ -672,7 +665,7 @@ html{
   flex-direction: column;
   justify-content: start;
   align-items: center; }
-  .contFert h1 {
+  .contFert h2 {
     font-size: 4rem;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
@@ -705,7 +698,7 @@ html{
   flex-direction: column;
   justify-content: start;
   align-items: center; }
-  .contSustrato h1 {
+  .contSustrato h2 {
     font-size: 4rem;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
@@ -734,7 +727,7 @@ html{
   flex-direction: column;
   justify-content: start;
   align-items: center; }
-  .contIluminacion h1 {
+  .contIluminacion h2 {
     font-size: 4rem;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
@@ -763,7 +756,7 @@ html{
   flex-direction: column;
   justify-content: start;
   align-items: center; }
-  .contVenti h1 {
+  .contVenti h2 {
     font-size: 4rem;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
@@ -792,7 +785,7 @@ html{
   flex-direction: column;
   justify-content: start;
   align-items: center; }
-  .contAcc h1 {
+  .contAcc h2 {
     font-size: 4rem;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
@@ -845,15 +838,19 @@ html{
   width: 55px; }
 
 /* ___________INDEX______________ */
+* {
+  margin: 0px;
+  padding: 0px; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif; }
+
 .contenedor_total {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.01fr 0.5fr 0.5fr 0.5fr 0.1fr;
-  grid-template-areas: "nav nav nav "
- "main main main "
- "cursos  cursos cursos"
- "tienda tienda tienda "
- "footer footer footer "; }
+  grid-template-areas: "nav nav nav " "main main main " "cursos  cursos cursos" "tienda tienda tienda " "footer footer footer "; }
 
 /* HEADER */
 .indexGrids {
@@ -1000,11 +997,7 @@ html{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr 0.4fr 0.5fr 0.5fr 0.1fr;
-    grid-template-areas: "nav nav"
- "main main"
- "cursos cursos"
- "tienda tienda"
- "footer footer";
+    grid-template-areas: "nav nav" "main main" "cursos cursos" "tienda tienda" "footer footer";
     grid-column-gap: 0px;
     grid-row-gap: 0px; }
   /* HEADER */
@@ -1045,11 +1038,7 @@ html{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 0.4fr 0.5fr 0.5fr 0.1fr;
-    grid-template-areas: "nav"
- "main"
- "cursos"
- "tienda"
- "footer"; }
+    grid-template-areas: "nav" "main" "cursos" "tienda" "footer"; }
   /* HEADER */
   .indexGrids {
     grid-area: nav; }
@@ -1118,7 +1107,7 @@ html{
   justify-content: space-evenly; }
   .sectionNosotros .nosotrosC1 Img {
     margin: 10px 0px 0px 0px; }
-  .sectionNosotros .nosotrosC2 h1 {
+  .sectionNosotros .nosotrosC2 h2 {
     margin: 20px;
     font-size: 4rem;
     font-family: 'Montserrat', sans-serif;
@@ -1155,10 +1144,7 @@ html{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.01fr 0.4fr 1fr 0.1fr;
-  grid-template-areas: "nav nav nav nav "
- "main main main main "  
- "sesion1 sesion2 sesion3 sesion4"   
- "footer footer footer footer"; }
+  grid-template-areas: "nav nav nav nav " "main main main main "   "sesion1 sesion2 sesion3 sesion4"    "footer footer footer footer"; }
 
 /* HEADER */
 .picsGrid {
@@ -1226,43 +1212,39 @@ html{
     transform: translate(0px); } }
 
 /* PICS1 */
-.pics1 {
+.pics1, .pics2, .pics4, .pics2 .pics4 {
   grid-area: sesion1;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   background-color: black; }
-  .pics1 h1 {
+  .pics1 h2, .pics2 h2, .pics4 h2, .pics2 .pics4 h2 {
     color: white;
     font-size: 4rem;
     font-style: italic; }
-  .pics1 img {
+  .pics1 img, .pics2 img, .pics4 img, .pics2 .pics4 img {
     width: 200px;
     border: solid 3px white;
     padding: 5px;
     filter: grayscale(100%);
     transition: all 1s; }
-    .pics1 img:hover {
+    .pics1 img:hover, .pics2 img:hover, .pics4 img:hover {
       width: 350px;
       margin: 10px;
       filter: none; }
 
 /* PICS2 */
 .pics2 {
-  grid-area: sesion2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: black; }
-  .pics2 h1 {
-    color: white;
+  background-color: white;
+  grid-area: sesion2; }
+  .pics2 h2 {
+    color: black;
     font-size: 4rem;
     font-style: italic; }
   .pics2 img {
     width: 200px;
-    border: solid 3px white;
+    border: solid 3px black;
     padding: 5px;
     filter: grayscale(100%);
     transition: all 1s; }
@@ -1279,7 +1261,7 @@ html{
   justify-content: space-evenly;
   align-items: center;
   background-color: black; }
-  .pics3 h1 {
+  .pics3 h2 {
     color: white;
     font-size: 4rem;
     font-style: italic; }
@@ -1296,19 +1278,15 @@ html{
 
 /* PICS4 */
 .pics4 {
-  grid-area: sesion4;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: black; }
-  .pics4 h1 {
-    color: white;
+  background-color: white;
+  grid-area: sesion4; }
+  .pics4 h2 {
+    color: black;
     font-size: 4rem;
     font-style: italic; }
   .pics4 img {
     width: 200px;
-    border: solid 3px white;
+    border: solid 3px black;
     padding: 5px;
     filter: grayscale(100%);
     transition: all 1s; }
@@ -1348,11 +1326,7 @@ html{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.01fr 0.9fr 1fr 1fr 0.1fr;
-    grid-template-areas: "nav nav"
- "main main"
- "sesion1 sesion2"
- "sesion4 sesion3"
- "footer footer"; }
+    grid-template-areas: "nav nav" "main main" "sesion1 sesion2" "sesion4 sesion3" "footer footer"; }
   /* HEADER */
   .picsGrid {
     grid-area: nav; }
@@ -1382,19 +1356,19 @@ html{
       padding: 10px;
       margin: 10px; }
   /* PICS1 */
-  .pics1 {
+  .pics1, .pics2, .pics4, .pics2 .pics4 {
     grid-area: sesion1;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     background-color: black; }
-    .pics1 h1 {
+    .pics1 h1, .pics2 h1, .pics4 h1, .pics2 .pics4 h1 {
       color: white;
       text-decoration: underline;
       font-size: 4rem;
       font-style: italic; }
-    .pics1 img {
+    .pics1 img, .pics2 img, .pics4 img, .pics2 .pics4 img {
       width: 300px;
       border: solid 3px white;
       padding: 5px; }
@@ -1474,13 +1448,7 @@ html{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.01fr 0.9fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
-    grid-template-areas: "nav"
- "main"
- "sesion1"
- "sesion2"
- "sesion3"
- "sesion4"
- "footer"; }
+    grid-template-areas: "nav" "main" "sesion1" "sesion2" "sesion3" "sesion4" "footer"; }
   /* HEADER */
   .picsGrid {
     grid-area: nav; }
@@ -1510,26 +1478,26 @@ html{
       padding: 10px;
       margin: 10px; }
   /* PICS1 */
-  .pics1 {
+  .pics1, .pics2, .pics4, .pics2 .pics4 {
     grid-area: sesion1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     background-color: black; }
-    .pics1 h1 {
+    .pics1 h1, .pics2 h1, .pics4 h1, .pics2 .pics4 h1 {
       color: white;
       text-decoration: underline;
       font-size: 2.5rem;
       font-style: italic;
       margin: 10px 0px; }
-    .pics1 img {
+    .pics1 img, .pics2 img, .pics4 img, .pics2 .pics4 img {
       width: 300px;
       border: solid 3px white;
       padding: 5px;
       margin: 10px 0px;
       transition: all 1s; }
-      .pics1 img:hover {
+      .pics1 img:hover, .pics2 img:hover, .pics4 img:hover {
         filter: none;
         width: 300px; }
   /* PICS2 */
@@ -1620,29 +1588,55 @@ html{
   .wspStickyp {
     width: 55px; } }
 
-/* LA HOJA QUE NO TIENE "__" ES LA HOJA PRINCIPAL */
-/* Para crear el archi le ponemos el "_" para importar solo ponemos @"blog"; */
-/* h1{
-    color: red;
+/* ______________MAP, MIXIN, EXTEND____________ */
+/* Mapas pagina blog */
+.mainBlogT {
+  background-color: green; }
 
-    p{
-        color: violet;
-    }
-}
+.art1T {
+  background-color: red; }
 
-ul{
-    color: white;
-    ul{
-        color: aqua;
-        a{
-            text-decoration: none;
-            color: blue;
-            &:hover{
-                color: yellow;
-            }
-        }
-        &:hover{
-            color: gr;
-        }
-    }
-} */
+.art2T {
+  background-color: blue; }
+
+.art3T {
+  background-color: yellow; }
+
+/* Extend pagina sesiones */
+.pics2 {
+  background-color: white;
+  grid-area: sesion2; }
+  .pics2 .pics4 {
+    background-color: white;
+    grid-area: sesion4; }
+
+/* Mixin pagina cursos */
+.cultivoInt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 600px;
+  border: solid 3px springgreen;
+  margin: 20px 5px;
+  background-color: black; }
+
+.cultivoExt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 600px;
+  border: solid 3px white;
+  margin: 20px 5px;
+  background-color: green; }
+
+.cultivoHidro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 600px;
+  border: solid 3px springgreen;
+  margin: 20px 5px;
+  background-color: black; }

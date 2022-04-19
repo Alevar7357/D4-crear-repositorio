@@ -5,18 +5,3 @@ $colorSecundario: #4ab70b;
 $tamañoh1: 5rem, white;
 $tamañop: 3rem, white;
 
-
-$titulosblog:   ( 
-    mainBlogT: green,
-    art1T: red,
-    art2T: blue,
-    art3T: yellow
-);
-
-@each $fondo, $color in $titulosblog {
-    .#{$fondo}{
-        background-color: $color;
-    }
-    
-}
-
