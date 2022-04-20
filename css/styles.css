@@ -879,11 +879,11 @@ html {
     font-weight: 700; }
   .mainIndex img {
     width: 600px;
-    padding: 100px 10px;
+    padding: 50px 10px;
     /* border: solid 4px #4ab70b; */ }
   .mainIndex p {
-    font-size: 2rem;
-    text-align: center;
+    font-size: 3rem;
+    text-align: left;
     padding: 10px;
     margin: 10px; }
 
@@ -898,14 +898,14 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center; }
-  .cursosIndex h1 {
+  .cursosIndex h2 {
     font-size: 4rem;
     margin: 10px;
     font-style: italic;
     font-weight: 700; }
   .cursosIndex p {
-    font-size: 1.5rem;
-    margin: 25px; }
+    font-size: 2rem;
+    margin: 10px; }
   .cursosIndex div {
     display: flex;
     flex-direction: column;
@@ -941,13 +941,13 @@ html {
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: 25px; }
-  .tiendaTp h1 {
+  .tiendaTp h2 {
     font-size: 4rem;
     margin-right: 25px;
     font-style: italic;
     font-weight: 700; }
   .tiendaTp p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-right: 25px; }
 
 .tiendaImga {
