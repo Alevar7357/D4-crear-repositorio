@@ -22,14 +22,13 @@ $titulosblog:(
     @extend .pics1;
     background-color: white;
     grid-area: sesion2;
-
-    .pics4 {
-        @extend .pics1;
-        background-color: white;
-        grid-area: sesion4;
-    }
 }
 
+.pics4 {
+    @extend .pics1;
+    background-color: white;
+    grid-area: sesion4;
+}
 
 
 /* Mixin pagina cursos */
