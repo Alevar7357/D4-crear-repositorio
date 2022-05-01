@@ -25,62 +25,32 @@
 <body class="container-fluid">
 
     <div class="row">
-        <header class="headerCursos col-md-12 col-lg-2">
-            <img class="img-fluid" src="../imagenes/logohnegro.png" alt="Logovanta">
-        </header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light col-md-12 col-lg-10 containerNav">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-3 border-bottom border-secondary">
+            <div class="container-fluid containerNav">
+                <a class="navbar-brand" href="../index.html"><img class="navbar-logo" src="/imagenes/logohblanco.png"
+                        alt="logo-blanco"></a>
+                <button type="button" class="navbar-toggler btnHambureguesa" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../paginas/blog.html">BLOG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../paginas/contacto.html">CONTACTO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../paginas/cursos.html">CURSOS</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                GROWSHOP
-                            </a>
-                            <ul class="dropdown-menu submenuGrowshop" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="./growshop.html#Fertilizantes">Fertilizantes</a>
-                                </li>
-                                <li><a class="dropdown-item" href="./growshop.html#Sustratos">Sustratos</a></li>
-                                <li><a class="dropdown-item" href="./growshop.html#Iluminacion">Iluminaciòn</a></li>
-                                <li><a class="dropdown-item" href="./growshop.html#Ventilacion">Ventilacion</a></li>
-                                <li><a class="dropdown-item" href="./growshop.html#Accesorios">Accesorios y
-                                        Parafernalia</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="../paginas/growshop.html">¡VER MAS!</a></li>
+                <div id="menuNavegacion" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item"><a class="nav-link" href="./blog.html">BLOG</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contacto.html">CONTACTO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./cursos.html">CURSOS</a></li>
+                        <li class="nav-item dropdown navSubmenu">
+                            <a class="nav-link dropdown-toggle" href="/paginas/growshop.html" role="button"
+                                data-bs-toggle="dropdown">GROWSHOP</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="growshop.html#Fertilizantes">Fertilizantes</a></li>
+                                <li><a class="dropdown-item" href="growshop.html#Sustratos">Sustratos</a></li>
+                                <li><a class="dropdown-item" href="growshop.html#Iluminacion">Iluminacion</a></li>
+                                <li><a class="dropdown-item" href="growshop.html#Ventilacion">Ventilacion</a></li>
+                                <li><a class="dropdown-item" href="growshop.html#Accesorios">Accesorios</a></li>
                             </ul>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../paginas/quienes-somos.html">NOSOTROS</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../paginas/sesiones.html">PICS 420</a>
-                        </li>
-                        </li>
-
+                        <li class="nav-item"><a class="nav-link" href="./quienes-somos.html">NOSOTROS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./sesiones.html">PICS420</a></li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2 buscadorMenu" type="search" placeholder="Search"
-                            aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </nav>

@@ -9,6 +9,7 @@ html{
 }
 
 .contenedor_total {
+    overflow-x:hidden;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.01fr 0.5fr 0.5fr 0.5fr 0.1fr;
@@ -18,19 +19,23 @@ html{
                         "tienda tienda tienda "
                         "footer footer footer ";
 }
-
-/* HEADER */
+/* NAVEGACION NUEVO */
 
 .indexGrids {
     grid-area: nav;
+    
 }
+.containerNav{
+    display: flex;
+    font-size: 2.5rem;
+    font-weight: 600;
 
-.headerIndex {
-    background-color: #F8F9FA;
-
-    img {
-        width: 200px;
+    .navSubmenu li{
+        font-size: 2rem;
     }
+}
+.navbar-logo{
+    width: 200px;
 }
 
 /* MAIN */

@@ -855,19 +855,25 @@ html {
   font-family: 'Montserrat', sans-serif; }
 
 .contenedor_total {
+  overflow-x: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.01fr 0.5fr 0.5fr 0.5fr 0.1fr;
   grid-template-areas: "nav nav nav " "main main main " "cursos  cursos cursos" "tienda tienda tienda " "footer footer footer "; }
 
-/* HEADER */
+/* NAVEGACION NUEVO */
 .indexGrids {
   grid-area: nav; }
 
-.headerIndex {
-  background-color: #F8F9FA; }
-  .headerIndex img {
-    width: 200px; }
+.containerNav {
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: 600; }
+  .containerNav .navSubmenu li {
+    font-size: 2rem; }
+
+.navbar-logo {
+  width: 200px; }
 
 /* MAIN */
 .mainIndex {
