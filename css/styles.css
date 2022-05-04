@@ -286,57 +286,54 @@
 
 /* ____________CONTACTO___________ */
 /* HEADER CONTACTO */
-.headerContacto {
-  background-color: #F8F9FA; }
-  .headerContacto img {
-    width: 200px; }
-
-/* MAIN CONTACTO */
-.mainContacto {
-  background-color: black; }
-
-.contactoT {
+.contactoMain {
+  background-color: #808080;
+  background-image: url(../imagenes/iconos-mockups/bg-dibujos2.jpg);
+  padding: 50px 0px;
+  font-size: 1.5rem;
   color: white; }
+  .contactoMain .containerform {
+    background: rgba(0, 0, 0, 0.493); }
+    .contactoMain .containerform .backg {
+      background-image: url(../imagenes/imagenes-sin-usar/fondo-1-min.jpg);
+      background-position: center center; }
+    .contactoMain .containerform .contactoHijo {
+      padding: 25px; }
 
-.formContacto {
-  display: flex;
-  color: white;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 10px 0px;
+.subtituloContacto {
   font-size: 2rem; }
-  .formContacto fieldset {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-  .formContacto label {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 5px 5px;
-    padding: 5px 5px; }
-  .formContacto legend {
-    margin: 10px 10px; }
 
-.textarea {
-  transition: all 2s; }
-  .textarea:hover {
-    height: 100px;
-    font-size: 3rem; }
-
-.botonForm {
+.containerLogo {
   display: flex;
-  flex-direction: column;
-  padding: 10px 5px; }
-  .botonForm input {
-    margin: 5px; }
+  justify-content: end; }
+  .containerLogo .logoContacto {
+    width: 150px;
+    padding: 5px;
+    background-color: black;
+    border-radius: 20px 0px; }
+
+.subtituloContacto {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  margin: 5px;
+  font-size: 3rem; }
+
+.formContacto div {
+  margin-bottom: 10px; }
+
+.prueba {
+  background: #808080; }
+  .prueba h3 {
+    font-size: 5rem;
+    font-family: 'Abril Fatface';
+    text-align: center;
+    margin: 10px 0px;
+    border-radius: 10px; }
 
 /* FOOTER CONTACTO */
 .footerContacto {
-  background-color: black;
-  grid-area: footer; }
+  background-color: black; }
   .footerContacto ul {
     display: flex;
     flex-direction: row;
@@ -354,69 +351,15 @@
 .wspSticky {
   width: 55px; }
 
-/* TAMAÑO TABLET */
-@media screen and (max-width: 1025px) {
-  .headerContacto {
-    background-color: #F8F9FA; }
-    .headerContacto img {
-      width: 200px; }
-  .mainContacto {
-    background-color: black; }
-  .contactoT {
-    color: white; }
-  .formContacto {
-    display: flex;
-    color: white;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin: 10px 0px;
-    font-size: 2rem; }
-    .formContacto fieldset {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center; }
-    .formContacto label {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      margin: 5px 5px;
-      padding: 5px 5px; }
-    .formContacto legend {
-      margin: 10px 10px; }
-  .textarea {
-    height: 50rem;
-    width: 50rem; }
-  .botonForm {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px 5px; }
-    .botonForm input {
-      margin: 5px; } }
-
-/* TAMAÑOS CELULAR */
 @media screen and (max-width: 426px) {
-  .headerContacto {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    background-color: #F8F9FA; }
-    .headerContacto img {
-      width: 200px;
-      width: 200px; }
-  /* NAVEGACION BLOG  */
-  /* NAVEGACION */
-  /* NAVEGACION */
-  /* NAVEGACION */
-  /* NAVEGACION */
-  /* NAVEGACION */
-  .textarea {
-    height: 20rem;
-    width: 30rem; } }
+  .prueba {
+    background: #808080; }
+    .prueba h3 {
+      font-size: 2rem;
+      font-family: 'Abril Fatface';
+      text-align: center;
+      margin: 10px 0px;
+      border-radius: 10px; } }
 
 /* _________CURSOS_________ */
 .headerCursos {
