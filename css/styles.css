@@ -1,10 +1,8 @@
 @charset "UTF-8";
 /* Las variables comienzan con el simbolo $ */
 /* _____________BLOG___________________ */
-.headerBlog {
-  background-color: #F8F9FA; }
-  .headerBlog img {
-    width: 200px; }
+.headerBlog img {
+  width: 200px; }
 
 /* MAIN BLOG */
 .mainBlog {
@@ -12,103 +10,137 @@
   color: white;
   display: flex;
   margin: 10px; }
-
-.imgMainblog {
-  width: 1000px; }
+  .mainBlog .cImgblog {
+    padding: 0px;
+    display: flex; }
 
 .contBlog {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: left; }
 
 .mainBlogT {
+  margin-top: 10px;
   padding: 15px;
   font-size: 4rem;
   font-style: italic;
-  font-weight: 600; }
+  font-weight: 600;
+  position: relative;
+  right: 100px;
+  text-align: center; }
 
 .mainBlogP {
   padding: 25px;
-  font-size: 1.5rem;
-  text-align: justify; }
+  font-size: 2.6rem;
+  text-align: left;
+  font-weight: 100; }
+  .mainBlogP .nivelL1 {
+    font-style: italic;
+    font-weight: bold; }
 
 /* SECTION BLOG */
 .noticiasBlog {
-  margin: 10px 0px;
+  margin: 20px 0px;
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: center; }
+  flex-direction: column; }
 
+/* ARTICULO 1 */
 .art1 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
   color: black;
-  margin: 5px; }
+  margin: 30px; }
+
+.art1Img {
+  width: 250px;
+  height: 200px;
+  border: solid 3px #4ab70b;
+  border-radius: 50%;
+  padding: 5px; }
+
+.contArt1 {
+  display: flex;
+  flex-direction: column; }
 
 .art1T {
   text-decoration: underline;
   margin: 10px;
-  font-size: 5rem; }
+  font-size: 4rem; }
 
 .art1P {
   text-align: justify;
   margin: 15px 25px;
   font-size: 2rem; }
 
-.art1Img {
-  width: 400px; }
-
 .art1 a {
   text-decoration: none;
   color: black; }
 
+/* ARTICULO 2 */
 .art2 {
-  background-color: black;
-  color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
-  margin: 5px; }
+  color: black;
+  margin: 30px; }
+
+.art2Img {
+  width: 250px;
+  height: 200px;
+  border: solid 3px #4ab70b;
+  border-radius: 50%;
+  padding: 5px; }
+
+.contArt2 {
+  display: flex;
+  flex-direction: column; }
 
 .art2T {
   text-decoration: underline;
   margin: 10px;
-  font-size: 5rem; }
+  font-size: 4rem; }
 
 .art2P {
   text-align: justify;
   margin: 15px 25px;
   font-size: 2rem; }
 
-.art2Img {
-  width: 400px; }
-
 .art2 a {
   text-decoration: none;
-  color: white; }
+  color: black; }
 
+/* ARTICULO 3 */
 .art3 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
   color: black;
-  margin: 5px; }
+  margin: 30px; }
+
+.art3Img {
+  width: 250px;
+  height: 200px;
+  border: solid 3px #4ab70b;
+  border-radius: 50%;
+  padding: 5px; }
+
+.contArt3 {
+  display: flex;
+  flex-direction: column; }
 
 .art3T {
   text-decoration: underline;
   margin: 10px;
-  font-size: 5rem; }
+  font-size: 4rem; }
 
 .art3P {
   text-align: justify;
   margin: 15px 25px;
   font-size: 2rem; }
-
-.art3Img {
-  width: 400px; }
 
 .art3 a {
   text-decoration: none;
@@ -145,7 +177,7 @@
     align-items: center;
     margin: 10px; }
   .imgMainblog {
-    margin: 25px 0px;
+    margin: 50px 0px;
     width: 500px;
     border: solid 5px #4ab70b; }
   .contBlog {
@@ -158,7 +190,9 @@
     font-size: 5rem;
     font-style: italic;
     font-weight: 700;
-    transform: none; }
+    transform: none;
+    position: relative;
+    left: 0px; }
   .mainBlogP {
     padding: 25px;
     font-size: 2rem;
@@ -175,26 +209,24 @@
     background-color: black;
     color: white;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 5px 0px; }
   .imgMainblog {
-    width: 250px; }
+    width: 300px; }
   .contBlog {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5px;
-    padding: 5px; }
+    margin: 5px 0px; }
   .mainBlogT {
-    padding: 15px;
     font-size: 2rem;
     font-style: italic;
     font-weight: 600; }
   .mainBlogP {
-    padding: 25px;
     font-size: 1rem;
-    text-align: justify;
-    margin: 5px;
-    padding: 0px; }
+    text-align: justify; }
   /* SECTION BLOG */
   .noticiasBlog {
     margin: 10px 0px;
@@ -202,65 +234,71 @@
     flex-direction: column;
     align-content: center;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    margin: 5px 0px; }
   .art1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     color: black;
-    margin: 5px; }
+    margin: 5px 0px; }
   .art1T {
     text-decoration: underline;
-    margin: 10px 0px;
+    margin: 5px 0px;
     font-size: 2rem;
     text-align: center; }
   .art1P {
     text-align: justify;
     margin: 15px 0px;
-    font-size: 1rem; }
+    font-size: 1.4rem;
+    margin: 2px; }
   .art1Img {
     width: 300px; }
   .art1 a {
     text-decoration: none;
     color: black; }
+  /* articulo 2 */
   .art2 {
-    background-color: black;
-    color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    margin: 5px; }
+    color: black;
+    margin: 5px 0px; }
   .art2T {
     text-decoration: underline;
-    margin: 10px 0px;
-    font-size: 2rem; }
+    margin: 5px 0px;
+    font-size: 2rem;
+    text-align: center; }
   .art2P {
     text-align: justify;
     margin: 15px 0px;
-    padding: 5px;
-    font-size: 1rem; }
+    font-size: 1.4rem;
+    margin: 2px; }
   .art2Img {
     width: 300px; }
   .art2 a {
     text-decoration: none;
-    color: white; }
+    color: black; }
+  /* articulo 3 */
   .art3 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     color: black;
-    margin: 5px; }
+    margin: 5px 0px; }
   .art3T {
     text-decoration: underline;
-    margin: 10px 0px;
-    font-size: 2rem; }
+    margin: 5px 0px;
+    font-size: 2rem;
+    text-align: center; }
   .art3P {
     text-align: justify;
     margin: 15px 0px;
-    font-size: 1rem; }
+    font-size: 1.4rem;
+    margin: 2px; }
   .art3Img {
     width: 300px; }
   .art3 a {
