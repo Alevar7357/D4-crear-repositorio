@@ -1089,7 +1089,7 @@ html {
   flex-wrap: wrap;
   background-color: black; }
   .mainNosotros h1 {
-    font-size: 5rem, white;
+    font-size: 5rem;
     color: white;
     margin: 20px;
     text-align: center;
@@ -1102,24 +1102,56 @@ html {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200; }
+    .mainNosotros p .nosEstilo {
+      color: #4ab70b;
+      font-weight: 600;
+      font-style: italic; }
 
 /* SECTION NOSOTROS */
 .sectionNosotros {
   background-color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  background-color: #4ab70b;
+  background-image: url(../imagenes/iconos-mockups/bg-dibujos4.jpg);
+  background-size: auto;
+  margin-top: 10px; }
   .sectionNosotros .nosotrosC1 Img {
     margin: 10px 0px 0px 0px; }
-  .sectionNosotros .nosotrosC2 h2 {
-    margin: 20px;
-    font-size: 4rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600; }
-  .sectionNosotros .nosotrosC2 p {
-    font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200; }
+  .sectionNosotros .nosotrosC2 {
+    background-color: rgba(0, 0, 0, 0.747);
+    color: white;
+    margin: 0px 5px; }
+    .sectionNosotros .nosotrosC2 h2 {
+      margin: 10px 10px;
+      font-size: 4.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      color: #4ab70b;
+      text-align: center;
+      margin: 10px 0px; }
+    .sectionNosotros .nosotrosC2 p {
+      font-size: 2rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200; }
+
+.nosotrosh3 {
+  font-weight: 600;
+  font-size: 3rem; }
+
+.historia {
+  background-color: white;
+  color: black; }
+
+.vantaSpan {
+  float: left;
+  width: 3.7em;
+  font-size: 65px;
+  line-height: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-style: italic; }
 
 /* FOOTER NOSOTROS */
 .footerNosotros {
