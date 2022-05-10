@@ -18,7 +18,7 @@ $titulosblog:(
 
 /* Extend pagina sesiones */
 
-.pics2 {
+/* .pics2 {
     @extend .pics1;
     background-color: white;
     grid-area: sesion2;
@@ -30,7 +30,7 @@ $titulosblog:(
     grid-area: sesion4;
 }
 
-
+ */
 /* Mixin pagina cursos */
 
 @mixin cursos($display,$direction, $alineacion, $ancho, $alto, $borde, $margen, $fondo) {

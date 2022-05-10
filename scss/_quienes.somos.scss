@@ -50,6 +50,8 @@
 
         Img {
             margin: 10px 0px 0px 0px;
+            border-bottom: solid 5px #4ab70b;
+            border-right: solid 5px #4ab70b;
         }
     }
 
@@ -86,6 +88,7 @@
 .historia{
     background-color: white;
     color: black;
+    padding: 5px;
 }
 .vantaSpan {
     float: left;
