@@ -437,7 +437,7 @@
     .contenedorPics {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.01fr 0.4fr 0.1fr 0.1fr 0.01fr;
+        grid-template-rows: 0.01fr 0.1fr 0.01fr 1fr 0.01fr;
         grid-template-areas:"nav"
                             "main"
                             "separador"

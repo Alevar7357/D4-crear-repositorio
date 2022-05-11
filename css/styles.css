@@ -397,7 +397,9 @@
       font-family: 'Abril Fatface';
       text-align: center;
       margin: 10px 0px;
-      border-radius: 10px; } }
+      border-radius: 10px; }
+  .logoContacto {
+    display: none; } }
 
 /* _________CURSOS_________ */
 .headerCursos {
@@ -938,7 +940,7 @@ body {
       display: flex;
       flex-direction: row;
       align-content: center;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center; }
   .rrss li {
     list-style: none; }
@@ -951,7 +953,7 @@ body {
     font-style: italic;
     font-weight: 600; }
   .homef {
-    width: 150px; }
+    width: 100px; }
   .rrssFace {
     width: 50px; }
   .rrssIg {
@@ -1648,7 +1650,7 @@ html {
   .contenedorPics {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.01fr 0.4fr 0.1fr 0.1fr 0.01fr;
+    grid-template-rows: 0.01fr 0.1fr 0.01fr 1fr 0.01fr;
     grid-template-areas: "nav" "main" "separador" "galeria" "footer"; }
   /* HEADER */
   .picsGrid {
