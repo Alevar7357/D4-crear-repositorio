@@ -12,7 +12,7 @@ html{
     overflow-x:hidden;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.01fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-rows: 0.01fr 0.8fr 0.5fr 0.5fr 0.01fr;
     grid-template-areas:"nav nav nav "
                         "main main main "
                         "cursos  cursos cursos"
@@ -27,7 +27,7 @@ html{
 }
 .containerNav{
     display: flex;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
 
     .navSubmenu li{
@@ -45,12 +45,16 @@ html{
     grid-area: main;
     background-color: black;
     color: white;
+    grid-area: main;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 5px 0px;
+    background-image: url(../imagenes/paralax/index-paralax-main.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 
     h1 {
         font-size: 8rem;
@@ -58,58 +62,78 @@ html{
         font-style: italic;
         font-weight: 700;
     }
-
-    img {
-        width: 600px;
-        padding: 50px 10px;
-
-        /* border: solid 4px #4ab70b; */
-    }
-
     p {
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-align: left;
         padding: 10px;
-        margin: 10px;
+        margin: 10px 50px;
+    }
+    .span__main{
+        background-color: rgba(0, 0, 0, 1);
+        font-weight: 600;
+        font-size: 3rem;
+        font-style: italic;
+        
+        
     }
 }
 
 /* SECTION index CURSOS */
 
 .cursosIndex {
-    background-color: black;
-    color: white;
+    color: #F8F9FA;
     grid-area: cursos;
     display: flex;
     margin-bottom: 5px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-content: flex-start;
+    background-image: url(../imagenes/paralax/index-paralax-cursos.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: flex-start;
+    
 
     h2 {
-        font-size: 4rem;
-        margin: 10px;
-        font-style: italic;
+        align-self: flex-start;
+        font-size: 5rem;
+        margin-top: 30px;
         font-weight: 700;
+        
     }
 
     p {
         font-size: 2rem;
         margin: 10px;
+        width: 90%;
+    }
+
+    .sparrafo{
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 2.5rem;
+    padding: 1px 3px;
+    font-weight: 600;
     }
 
     div {
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 20px;
+        border-radius: 50px;
     }
-
+    
     img {
-        width: 750px;
+        width: 700px;
         margin: 25px;
+        border: solid 3px gray;
+        border-radius: 50px;
     }
 }
+
 
 .indexIrcurso {
     animation: jackInTheBox;
@@ -123,6 +147,8 @@ html{
     margin: 10px 25px;
     padding: 5px;
     border: solid 3px rgba(9, 180, 9, 0.836);
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 /* SECTION index TIENDA */
@@ -134,19 +160,24 @@ html{
     flex-direction: row;
     align-content: center;
     justify-content: center;
+    background-image: url(../imagenes/paralax/index-paralax-growshop.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .tiendaTp {
+    color: #F8F9FA;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 25px;
+    
 
     h2 {
-        font-size: 4rem;
-        margin-right: 25px;
-        font-style: italic;
+        font-size: 5rem;
+        margin-top: 30px;
         font-weight: 700;
     }
 
@@ -154,26 +185,39 @@ html{
         font-size: 2rem;
         margin-right: 25px;
     }
+
+    .sparrafo{
+        color: rgba(9, 180, 9, 1);
+        background-color: rgba(0, 0, 0, 1);
+        font-size: 2.5rem;
+        padding: 1px 3px;
+        font-weight: 600;
+        }
 }
 
 .tiendaImga {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    border-radius: 50px;
     img {
         width: 700px;
-        margin: 20px;
+        margin: 25px;
+        border: solid 3px gray;
+        border-radius: 50px;
     }
 
     a {
         text-decoration: none;
         font-size: 3rem;
         color: white;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.9);
         border: solid 3px rgba(9, 180, 9, 0.836);
         margin: 25px;
         padding: 5px;
+        border-radius: 50px;
     }
 }
 
@@ -262,10 +306,11 @@ html{
         grid-area: cursos;
     }
 
-    .contIndex img {
+    .contIndex{
+        img{ 
         width: 400px;
     }
-
+}
     /* SECTION main TIENDA */
 
     .tiendaIndex {
@@ -315,10 +360,6 @@ html{
         h1 {
             font-size: 5rem;
         }
-
-        img {
-            width: 300px;
-        }
     }
 
     /* SECTION index CURSOS */
@@ -342,6 +383,10 @@ html{
 
     .tiendaIndex {
         grid-area: tienda;
+
+        p{
+            font-size: 2rem;
+        }
     }
 
     .tiendaImga img {
@@ -356,12 +401,6 @@ html{
         }
 
         grid-area: footer;
-        background-color: gray;
 
-        ul {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
     }
 }

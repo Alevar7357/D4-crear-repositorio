@@ -607,6 +607,10 @@
     height: 400px; } }
 
 /*  HEADER GROWSHOP */
+body {
+  background-color: white;
+  overflow-x: hidden; }
+
 .headerGrowshop {
   background-color: #F8F9FA; }
   .headerGrowshop img {
@@ -637,7 +641,14 @@
   .contG1 ul {
     list-style: none; }
 
+.contG2 {
+  margin: 10px 0px; }
+  .contG2 img {
+    border: solid 2px gray; }
+
 .contG3 {
+  display: flex;
+  flex-direction: column;
   color: white; }
   .contG3 h1 {
     font-size: 3.5rem;
@@ -648,6 +659,24 @@
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200; }
+  .contG3 .smgrowshop {
+    font-size: 2rem;
+    font-weight: 700; }
+
+/* SEPARADOR */
+.catalogo {
+  height: 200px;
+  background-image: url(../imagenes/iconos-mockups/bg-dibujos4.jpg);
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .catalogo h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    color: white; }
 
 /* SECTION FERTILIZANTES */
 .sectionFerti {
@@ -657,22 +686,30 @@
   margin: 5px 0px; }
 
 .contFert {
-  background-color: black;
+  background-image: url(../imagenes/Growshop/img-growshop-secciones/growshop-fertilizantes.png);
+  filter: grayscale(100%);
+  transition: all 1s;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center; }
+  .contFert:hover {
+    filter: none; }
   .contFert h2 {
+    background-color: #5dfa02af;
+    width: 100%;
     font-size: 4rem;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     font-weight: 600;
     text-align: center; }
   .contFert p {
+    background-color: #5dfa02af;
+    width: 100%;
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     text-align: center; }
 
 .tarjetasFerti {
@@ -690,22 +727,30 @@
   margin: 5px 0px; }
 
 .contSustrato {
-  background-color: black;
+  background-image: url(../imagenes/Growshop/img-growshop-secciones/growshop-sustrato.png);
+  filter: grayscale(100%);
+  transition: all 1s;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center; }
+  .contSustrato:hover {
+    filter: none; }
   .contSustrato h2 {
+    background-color: #5dfa02af;
+    width: 100%;
     font-size: 4rem;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     font-weight: 600;
     text-align: center; }
   .contSustrato p {
+    background-color: #5dfa02af;
+    width: 100%;
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     text-align: center; }
 
 .tarjetasSustrato {
@@ -719,22 +764,30 @@
   margin: 5px 0px; }
 
 .contIluminacion {
-  background-color: black;
+  background-image: url(../imagenes/Growshop/img-growshop-secciones/growshop-iluminacion.png);
+  filter: grayscale(100%);
+  transition: all 1s;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center; }
+  .contIluminacion:hover {
+    filter: none; }
   .contIluminacion h2 {
+    background-color: #5dfa02af;
+    width: 100%;
     font-size: 4rem;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     font-weight: 600;
     text-align: center; }
   .contIluminacion p {
+    background-color: #5dfa02af;
+    width: 100%;
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     text-align: center; }
 
 .tarjetasIluminacion {
@@ -748,22 +801,30 @@
   margin: 5px 0px; }
 
 .contVenti {
-  background-color: black;
+  background-image: url(../imagenes/Growshop/img-growshop-secciones/growshop-ventilacion.png);
+  filter: grayscale(100%);
+  transition: all 1s;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center; }
+  .contVenti:hover {
+    filter: none; }
   .contVenti h2 {
+    background-color: #5dfa02af;
+    width: 100%;
     font-size: 4rem;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     font-weight: 600;
     text-align: center; }
   .contVenti p {
+    background-color: #5dfa02af;
+    width: 100%;
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     text-align: center; }
 
 .tarjetasVenti {
@@ -777,22 +838,30 @@
   margin: 5px 0px; }
 
 .contAcc {
-  background-color: black;
+  background-image: url(../imagenes/Growshop/img-growshop-secciones/growshop-accesoriosyparafernalia.png);
+  filter: grayscale(100%);
+  transition: all 1s;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center; }
+  .contAcc:hover {
+    filter: none; }
   .contAcc h2 {
+    background-color: #5dfa02af;
+    width: 100%;
     font-size: 4rem;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     font-weight: 600;
     text-align: center; }
   .contAcc p {
+    background-color: #5dfa02af;
+    width: 100%;
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     text-align: center; }
 
 .tarjetasAcc {
@@ -825,15 +894,70 @@
   font-style: italic;
   font-weight: 600; }
 
-.home {
-  width: 150px; }
-
-.rrssFace,
-.rrssIg {
+.homef {
   width: 50px; }
 
-.wspSticky {
-  width: 55px; }
+.rrssFacef {
+  width: 25px; }
+
+.rrssIgf {
+  width: 25px; }
+
+.wspStickyf {
+  width: 30px; }
+
+@media screen and (max-width: 769px) {
+  .contG1 {
+    text-align: center; }
+  .contFert {
+    filter: none; }
+    .contFert h2 {
+      width: auto; }
+  .contSustrato {
+    filter: none; }
+    .contSustrato h2 {
+      width: auto; }
+  .contIluminacion {
+    filter: none; }
+    .contIluminacion h2 {
+      width: auto; }
+  .contVenti {
+    filter: none; }
+    .contVenti h2 {
+      width: auto; }
+  .contAcc {
+    filter: none; }
+    .contAcc h2 {
+      width: auto; } }
+
+@media screen and (max-width: 426px) {
+  .footerGrowshop {
+    margin: 0px 0px 0px 0px;
+    background-color: black; }
+    .footerGrowshop ul {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: space-evenly;
+      align-items: center; }
+  .rrss li {
+    list-style: none; }
+  .rrss a {
+    text-decoration: none;
+    color: #4ab70b; }
+  .up {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 600; }
+  .homef {
+    width: 150px; }
+  .rrssFace {
+    width: 50px; }
+  .rrssIg {
+    width: 50px; }
+  .wspSticky {
+    width: 55px; } }
 
 /* ___________INDEX______________ */
 * {
@@ -848,7 +972,7 @@ html {
   overflow-x: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.01fr 0.5fr 0.5fr 0.5fr 0.1fr;
+  grid-template-rows: 0.01fr 0.8fr 0.5fr 0.5fr 0.01fr;
   grid-template-areas: "nav nav nav " "main main main " "cursos  cursos cursos" "tienda tienda tienda " "footer footer footer "; }
 
 /* NAVEGACION NUEVO */
@@ -857,7 +981,7 @@ html {
 
 .containerNav {
   display: flex;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600; }
   .containerNav .navSubmenu li {
     font-size: 2rem; }
@@ -870,53 +994,73 @@ html {
   grid-area: main;
   background-color: black;
   color: white;
+  grid-area: main;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 5px 0px; }
+  background-image: url(../imagenes/paralax/index-paralax-main.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; }
   .mainIndex h1 {
     font-size: 8rem;
     margin: 25px 10px;
     font-style: italic;
     font-weight: 700; }
-  .mainIndex img {
-    width: 600px;
-    padding: 50px 10px;
-    /* border: solid 4px #4ab70b; */ }
   .mainIndex p {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: left;
     padding: 10px;
-    margin: 10px; }
+    margin: 10px 50px; }
+  .mainIndex .span__main {
+    background-color: black;
+    font-weight: 600;
+    font-size: 3rem;
+    font-style: italic; }
 
 /* SECTION index CURSOS */
 .cursosIndex {
-  background-color: black;
-  color: white;
+  color: #F8F9FA;
   grid-area: cursos;
   display: flex;
   margin-bottom: 5px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center; }
+  align-content: flex-start;
+  background-image: url(../imagenes/paralax/index-paralax-cursos.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  align-items: flex-start; }
   .cursosIndex h2 {
-    font-size: 4rem;
-    margin: 10px;
-    font-style: italic;
+    align-self: flex-start;
+    font-size: 5rem;
+    margin-top: 30px;
     font-weight: 700; }
   .cursosIndex p {
     font-size: 2rem;
-    margin: 10px; }
+    margin: 10px;
+    width: 90%; }
+  .cursosIndex .sparrafo {
+    background-color: black;
+    font-size: 2.5rem;
+    padding: 1px 3px;
+    font-weight: 600; }
   .cursosIndex div {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    border-radius: 50px; }
   .cursosIndex img {
-    width: 750px;
-    margin: 25px; }
+    width: 700px;
+    margin: 25px;
+    border: solid 3px gray;
+    border-radius: 50px; }
 
 .indexIrcurso {
   animation: jackInTheBox;
@@ -928,7 +1072,9 @@ html {
   font-size: 3rem;
   margin: 10px 25px;
   padding: 5px;
-  border: solid 3px rgba(9, 180, 9, 0.836); }
+  border: solid 3px rgba(9, 180, 9, 0.836);
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.9); }
 
 /* SECTION index TIENDA */
 .tiendaIndex {
@@ -937,38 +1083,54 @@ html {
   flex-wrap: wrap;
   flex-direction: row;
   align-content: center;
-  justify-content: center; }
+  justify-content: center;
+  background-image: url(../imagenes/paralax/index-paralax-growshop.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
 
 .tiendaTp {
+  color: #F8F9FA;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: 25px; }
   .tiendaTp h2 {
-    font-size: 4rem;
-    margin-right: 25px;
-    font-style: italic;
+    font-size: 5rem;
+    margin-top: 30px;
     font-weight: 700; }
   .tiendaTp p {
     font-size: 2rem;
     margin-right: 25px; }
+  .tiendaTp .sparrafo {
+    color: #09b409;
+    background-color: black;
+    font-size: 2.5rem;
+    padding: 1px 3px;
+    font-weight: 600; }
 
 .tiendaImga {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  border-radius: 50px; }
   .tiendaImga img {
     width: 700px;
-    margin: 20px; }
+    margin: 25px;
+    border: solid 3px gray;
+    border-radius: 50px; }
   .tiendaImga a {
     text-decoration: none;
     font-size: 3rem;
     color: white;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.9);
     border: solid 3px rgba(9, 180, 9, 0.836);
     margin: 25px;
-    padding: 5px; }
+    padding: 5px;
+    border-radius: 50px; }
 
 .indexIrtienda {
   animation: jackInTheBox;
@@ -1053,8 +1215,6 @@ html {
     grid-area: main; }
     .mainIndex h1 {
       font-size: 5rem; }
-    .mainIndex img {
-      width: 300px; }
   /* SECTION index CURSOS */
   .cursosIndex {
     grid-area: cursos;
@@ -1068,18 +1228,15 @@ html {
   /* SECTION index TIENDA */
   .tiendaIndex {
     grid-area: tienda; }
+    .tiendaIndex p {
+      font-size: 2rem; }
   .tiendaImga img {
     width: 300px; }
   /* FOOTER */
   .footerIndex {
-    grid-area: footer;
-    background-color: gray; }
+    grid-area: footer; }
     .footerIndex p {
-      font-size: 2rem; }
-    .footerIndex ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center; } }
+      font-size: 2rem; } }
 
 /* _____________QUIENES SOMOS___________________ */
 /* MAIN NOSOTROS */
