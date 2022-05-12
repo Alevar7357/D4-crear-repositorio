@@ -4,6 +4,7 @@ body{
     background-color: white;
     overflow-x:hidden;
 }
+
 .headerGrowshop {
     background-color: #F8F9FA;
 
@@ -352,7 +353,7 @@ body{
         justify-content: center;
         align-items: baseline;
     }
-}
+
 
 .rrss {
     li {
@@ -373,19 +374,21 @@ body{
 }
 
 .homef {
-    width: 50px;
+    width: 150px;
 }
 
 .rrssFacef{
-    width: 25px;
+    width: 50px;
 }
 .rrssIgf {
-    width: 25px;
+    width: 50px;
 }
 
 .wspStickyf {
-    width: 30px;
+    width: 55px;
 }
+}
+
 
 @media screen and (max-width: 769px) {
 
@@ -442,7 +445,7 @@ body{
             justify-content: center;
             align-items: center;
         }
-    }
+    
 
     .rrss {
         li {
@@ -456,7 +459,7 @@ body{
     }
     
     .up {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         font-family: 'Montserrat', sans-serif;
         font-style: italic;
         font-weight: 600;
@@ -466,15 +469,15 @@ body{
         width: 100px;
     }
     
-    .rrssFace{
-        width: 50px;
+    .rrssFacef{
+        width: 35px;
     }
-    .rrssIg {
-        width: 50px;
+    .rrssIgf{
+        width: 35px;
     }
     
-    .wspSticky {
-        width: 55px;
+    .wspStickyf{
+        width: 35px;
     }
-
+}
 }
